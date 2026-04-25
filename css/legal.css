@@ -1,48 +1,48 @@
 .legal-body {
-  display: block;
-  overflow: auto;
-  height: auto;
+   display: block;
+   overflow: auto;
+   height: auto;
 }
 
 .legal-main {
-  margin-left: var(--nav-width);
-  padding: 80px 120px;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+   margin-left: var(--nav-width);
+   padding: 80px 120px;
+   max-width: 900px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
 }
 
 .back-link {
-  color: var(--color-green);
-  font-size: 0.95rem;
-  transition: opacity 0.2s;
+   color: var(--color-main);
+   font-size: 0.95rem;
+   transition: opacity 0.2s;
 }
 
 .back-link:hover {
-  opacity: 0.75;
+   opacity: 0.75;
 }
 
 .legal-main h1 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 700;
-  color: var(--color-green);
+   font-size: clamp(2rem, 4vw, 3.5rem);
+   font-weight: 700;
+   color: var(--color-main);
 }
 
 .legal-main section {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
 }
 
 .legal-main h2 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-white);
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: var(--color-white);
 }
 
 .legal-main p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--color-text-muted);
+   font-size: 1rem;
+   line-height: 1.7;
+   color: var(--color-text-muted);
 }
