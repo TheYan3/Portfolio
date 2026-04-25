@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --color-bg: #0a0f0a;
+  --color-bg-card: #131a13;
+  --color-green: #b5e93b;
+  --color-white: #ffffff;
+  --color-text-muted: #888888;
+  --color-border: #1e2a1e;
+
+  --font-main: 'Quantico', sans-serif;
+
+  --nav-width: 60px;
+  --section-width: 100vw;
+  --section-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-green);
+  color: var(--color-bg);
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  padding: 10px 28px;
+  border-radius: 50px;
+  border: 2px solid var(--color-white);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-green);
+  color: var(--color-green);
+}
+
+.section-headline {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--color-green);
+  margin-bottom: 2rem;
+}

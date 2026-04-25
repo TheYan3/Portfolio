@@ -1,0 +1,41 @@
+#skills {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.skills-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.skills-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  text-align: justify;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.skill-item img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
