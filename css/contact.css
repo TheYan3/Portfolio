@@ -1,11 +1,16 @@
 #contact {
-   flex-direction: column;
-   align-items: flex-start;
-   justify-content: center;
+   justify-content: flex-start;
+}
+
+.contact-wrapper {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 48px;
 }
 
 .contact-content {
-   max-width: 600px;
+   max-width: 1040px;
    width: 100%;
    display: flex;
    flex-direction: column;
@@ -14,7 +19,7 @@
 
 .contact-description {
    font-size: 1.1rem;
-   color: var(--color-text-muted);
+   color: var(--color-white);
 }
 
 .contact-form {
@@ -44,7 +49,7 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-   color: var(--color-text-muted);
+   color: var(--color-white);
 }
 
 .contact-info {
@@ -55,7 +60,7 @@
 
 .contact-info a {
    font-size: 0.95rem;
-   color: var(--color-text-muted);
+   color: var(--color-white);
    transition: color 0.2s;
 }
 

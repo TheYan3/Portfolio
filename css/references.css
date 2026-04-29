@@ -1,14 +1,19 @@
 #references {
-   flex-direction: column;
-   align-items: flex-start;
-   justify-content: center;
+   justify-content: flex-start;
+}
+
+.references-wrapper {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 48px;
 }
 
 .references-content {
    display: flex;
    flex-direction: column;
    gap: 32px;
-   max-width: 700px;
+   max-width: 1040px;
 }
 
 .reference-card {
@@ -42,5 +47,5 @@
 
 .author-role {
    font-size: 0.85rem;
-   color: var(--color-text-muted);
+   color: var(--color-white);
 }

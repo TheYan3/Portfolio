@@ -1,14 +1,25 @@
 #why-me {
+   justify-content: flex-start;
    align-items: flex-start;
-   flex-direction: column;
-   justify-content: center;
+   padding-top: 168px;
 }
 
 .about-content {
-   max-width: 700px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 48px;
+}
+
+.about-body {
    display: flex;
    flex-direction: column;
    gap: 28px;
+   max-width: 1040px;
+}
+
+.about-cta {
+   align-self: flex-end;
 }
 
 .about-content h3 {
@@ -20,14 +31,15 @@
 .about-description {
    font-size: 1.1rem;
    line-height: 1.7;
-   color: var(--color-text-muted);
+   color: var(--color-white);
    text-align: justify;
 }
 
 .about-facts {
    display: flex;
-   gap: 40px;
+   justify-content: space-evenly;
    flex-wrap: wrap;
+   gap: 24px;
 }
 
 .fact {
@@ -35,8 +47,12 @@
    flex-direction: column;
    align-items: center;
    gap: 10px;
-   font-size: 0.9rem;
-   color: var(--color-text-muted);
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.2;
+   letter-spacing: 0;
+   text-align: center;
+   color: var(--color-white);
 }
 
 .fact-icon {

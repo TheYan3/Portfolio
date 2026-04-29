@@ -1,41 +1,63 @@
 #skills {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+   justify-content: flex-start;
+   align-items: flex-end;
+}
+
+.skills-wrapper {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 48px;
 }
 
 .skills-content {
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   max-width: 1040px;
 }
 
 .skills-description {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--color-text-muted);
-  max-width: 600px;
-  text-align: justify;
+   font-size: 1.1rem;
+   line-height: 1.7;
+   color: var(--color-white);
+   text-align: justify;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 32px;
 }
 
 .skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 12px;
+   font-size: 18px;
+   font-weight: 400;
+   color: var(--color-white);
 }
 
 .skill-item img {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
+   width: 60px;
+   height: 60px;
+   object-fit: contain;
+}
+
+.skill-icon {
+   width: 60px;
+   height: 60px;
+   background-color: var(--color-main);
+   mask-size: contain;
+   mask-repeat: no-repeat;
+   mask-position: center;
+   -webkit-mask-size: contain;
+   -webkit-mask-repeat: no-repeat;
+   -webkit-mask-position: center;
+}
+
+.skill-item:hover {
+   filter: drop-shadow(0 0 8px var(--color-main));
 }
