@@ -97,7 +97,18 @@ function initScrollObserver() {
   }, { passive: true });
 }
 
+/** Toggles the active language button in the header. */
+function initLangToggle() {
+  document.querySelectorAll('.lang-toggle .lang').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.lang-toggle .lang').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+}
+
 initArrowButtons();
 initNavLinks();
 initScrollObserver();
 initWheelScroll();
+initLangToggle();

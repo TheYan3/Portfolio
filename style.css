@@ -7,11 +7,12 @@
    --color-white: #ffffff;
    --color-text-muted: #888888;
    --color-border: #1e2a1e;
+   --color-nav-text: #4a4a4a;
 
    --font-main: "Quantico", sans-serif;
 
-   --nav-width: 60px;
-   --section-width: 100vw;
+   --nav-width: 172px;
+   --section-width: calc(100vw - var(--nav-width));
    --section-height: 100vh;
 }
 
