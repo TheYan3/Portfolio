@@ -28,19 +28,65 @@
    border-right: 1px solid var(--color-border);
 }
 
+.section-label {
+   writing-mode: vertical-rl;
+   transform: rotate(180deg);
+   font-size: 54px;
+   font-weight: 400;
+   color: transparent;
+   -webkit-text-stroke: 3px var(--color-main);
+   white-space: nowrap;
+   letter-spacing: 0;
+   line-height: 1.2;
+   align-self: flex-start;
+   flex-shrink: 0;
+}
+
 .arrow-btn {
    position: absolute;
    right: 40px;
-   bottom: 48px;
+   top: 50%;
+   transform: translateY(-50%);
    background: none;
    border: none;
-   color: var(--color-main);
-   font-size: 2.5rem;
    cursor: pointer;
+   padding: 0;
+   display: flex;
+   align-items: center;
    transition: transform 0.2s;
-   line-height: 1;
+}
+
+.arrow-icon {
+   width: 112px;
+   height: 37px;
+   background-color: var(--color-main);
+   mask-image: url("../assets/img/buttons/Arrow_Next.svg");
+   mask-size: contain;
+   mask-repeat: no-repeat;
+   mask-position: center;
+   -webkit-mask-image: url("../assets/img/buttons/Arrow_Next.svg");
+   -webkit-mask-size: contain;
+   -webkit-mask-repeat: no-repeat;
+   -webkit-mask-position: center;
 }
 
 .arrow-btn:hover {
-   transform: translateX(6px);
+   transform: translateY(-50%) translateX(8px);
+   filter: drop-shadow(0 0 8px var(--color-main));
+}
+
+.arrow-btn--hero {
+   top: 20%;
+}
+.arrow-btn--why-me {
+   top: 70%;
+}
+.arrow-btn--skills {
+   top: 50%;
+}
+.arrow-btn--work {
+   top: 50%;
+}
+.arrow-btn--references {
+   top: 50%;
 }
