@@ -57,8 +57,10 @@ img {
    background-color: var(--color-main);
    color: var(--color-bg);
    font-family: var(--font-main);
-   font-weight: 700;
-   font-size: 1rem;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.2;
+   letter-spacing: 0;
    padding: 12px 32px;
    border-radius: 50px;
    border: none;
@@ -75,7 +77,10 @@ img {
    background-color: transparent;
    color: var(--color-white);
    font-family: var(--font-main);
-   font-size: 1rem;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.2;
+   letter-spacing: 0;
    padding: 10px 28px;
    border-radius: 50px;
    border: 2px solid var(--color-white);
