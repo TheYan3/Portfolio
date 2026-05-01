@@ -9,15 +9,16 @@
    align-items: flex-start;
    gap: 40px;
    height: 100%;
-   padding-top: 100px;
+   padding-top: 68px;
    box-sizing: border-box;
+   width: 100%;
+   padding-right: 72px;
 }
 
 .contact-body {
    display: flex;
    flex-direction: row;
    align-items: flex-start;
-   gap: 218px;
    flex: 1;
 }
 
@@ -29,7 +30,7 @@
    display: flex;
    flex-direction: column;
    gap: 16px;
-   width: 360px;
+   width: 457px;
    flex-shrink: 0;
 }
 
@@ -76,7 +77,7 @@
    display: flex;
    align-items: flex-start;
    gap: 10px;
-   font-size: 14px;
+   font-size: 16px;
    color: var(--color-main);
    line-height: 1.5;
 }
@@ -126,7 +127,7 @@
    align-items: flex-end;
    flex: 0 0 417px;
    margin-left: auto;
-   height: 665px;
+   height: 80vh;
    align-self: flex-start;
 }
 
@@ -167,7 +168,7 @@
    display: flex;
    align-items: center;
    gap: 10px;
-   font-size: 14px;
+   font-size: 18px;
    color: var(--color-white);
    transition: color 0.2s;
 }
@@ -200,7 +201,7 @@
    flex-direction: column;
    align-items: flex-end;
    gap: 6px;
-   font-size: 13px;
+   font-size: 16px;
    color: var(--color-white);
 }
 
