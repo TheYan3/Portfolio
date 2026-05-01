@@ -1,43 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legal Notice | Yannic Jundt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/legal.css" />
-  </head>
-  <body class="legal-body">
-    <nav class="sidebar-nav">
-      <div class="nav-logo">YJ</div>
-    </nav>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Legal Notice | Yannic Jundt</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:wght@700&display=swap"
+         rel="stylesheet" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/layout.css" />
+      <link rel="stylesheet" href="css/navigation.css" />
+      <link rel="stylesheet" href="css/hero.css" />
+      <link rel="stylesheet" href="css/contact.css" />
+      <link rel="stylesheet" href="css/legal.css" />
+   </head>
+   <body>
+      <nav class="sidebar-nav">
+         <div class="nav-logo">
+            <svg viewBox="0 0 120 120" class="logo-ring" aria-hidden="true">
+               <path
+                  id="logo-arc"
+                  d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"
+                  fill="none" />
+               <text font-size="10.5" letter-spacing="1.5">
+                  <textPath href="#logo-arc">
+                     frontend developer • frontend developer •
+                  </textPath>
+               </text>
+            </svg>
+            <span class="logo-initials">YJ</span>
+         </div>
+         <ul class="nav-links">
+            <li><a href="index.html#why-me">Why me</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#my-work">My Work</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+         </ul>
+      </nav>
 
-    <main class="legal-main">
-      <a href="index.html" class="back-link">&#8592; Back</a>
-      <h1>Legal Notice</h1>
+      <header class="hero-header">
+         <div class="social-links">
+            <a
+               href="mailto:3.j.yannic@gmail.com"
+               class="socialContainer"
+               aria-label="Email">
+               <svg class="socialSvg" viewBox="0 0 16 16">
+                  <path
+                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+               </svg>
+            </a>
+            <a
+               href="https://linkedin.com"
+               target="_blank"
+               class="socialContainer"
+               aria-label="LinkedIn">
+               <svg class="socialSvg" viewBox="0 0 448 512">
+                  <path
+                     d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+               </svg>
+            </a>
+            <a
+               href="https://github.com/TheYan3"
+               target="_blank"
+               class="socialContainer"
+               aria-label="GitHub">
+               <svg class="socialSvg" viewBox="0 0 16 16">
+                  <path
+                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+               </svg>
+            </a>
+         </div>
+         <div class="lang-toggle">
+            <button class="lang active" data-lang="de">DE</button>
+            <span class="lang-sep">|</span>
+            <button class="lang" data-lang="en">EN</button>
+         </div>
+      </header>
 
-      <section>
-        <h2>Information according to § 5 TMG</h2>
-        <p>Yannic Jundt</p>
-        <p>Street and house number</p>
-        <p>Postcode City</p>
-      </section>
+      <main class="scroll-container">
+         <section id="legal-p1" class="section">
+            <div class="legal-wrapper">
+               <div class="section-label">Legal Notice</div>
+               <div class="legal-columns">
+                  <div class="legal-col">
+                     <section class="legal-block">
+                        <h2>Information according to § 5 TMG</h2>
+                        <ul>
+                           <li>Yannic Jundt</li>
+                           <li>Street and house number</li>
+                           <li>Postcode City</li>
+                        </ul>
+                        <p>
+                           Exploring the Board<br />Email: 3.j.yannic@gmail.com
+                        </p>
+                     </section>
+                     <section class="legal-block">
+                        <h2>Acceptance of terms</h2>
+                        <p>
+                           By accessing and using Portfolio (Product), you
+                           acknowledge and agree to the following terms and
+                           conditions, and any policies, guidelines, or
+                           amendments thereto that may be presented to you from
+                           time to time. We, the listed students, may update or
+                           change the terms and conditions from time to time
+                           without notice.
+                        </p>
+                     </section>
+                     <section class="legal-block">
+                        <h2>Scope and ownership of the product</h2>
+                        <p>
+                           Portfolio has been developed as part of a student
+                           group project in a web development bootcamp at the
+                           Developer Akademie GmbH. It has an educational
+                           purpose and is not intended for extensive personal
+                           &amp; business usage. As such, we cannot guarantee
+                           consistent availability, reliability, accuracy, or
+                           any other aspect of quality regarding this Product.
+                        </p>
+                        <p>
+                           The design of Portfolio is owned by the Developer
+                           Akademie GmbH. Unauthorized use, reproduction,
+                           modification, distribution, or replication of the
+                           design is strictly prohibited.
+                        </p>
+                     </section>
+                     <section class="legal-block">
+                        <h2>Proprietary rights</h2>
+                        <p>
+                           Aside from the design owned by Developer Akademie
+                           GmbH, we, the listed students, retain all proprietary
+                           rights in Portfolio, including any associated
+                           copyrighted material, trademarks, and other
+                           proprietary information.
+                        </p>
+                     </section>
+                  </div>
+               </div>
+            </div>
+            <button class="arrow-btn" data-target="legal-p2">
+               <div class="arrow-icon" aria-hidden="true"></div>
+            </button>
+         </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p>Phone: +49 123 456 7890</p>
-        <p>Email: your@email.com</p>
-      </section>
+         <section id="legal-p2" class="section">
+            <div class="legal-wrapper">
+               <div class="legal-columns">
+                  <div class="legal-col">
+                     <section class="legal-block">
+                        <h2>Use of the product</h2>
+                        <p>
+                           Portfolio is intended to be used for lawful purposes
+                           only, in accordance with all applicable laws and
+                           regulations. Any use of Portfolio for illegal
+                           activities, or to harass, harm, threaten, or
+                           intimidate another person, is strictly prohibited.
+                           You are solely responsible for your interactions with
+                           other users of Portfolio.
+                        </p>
+                     </section>
+                     <section class="legal-block">
+                        <h2>
+                           Disclaimer of warranties and limitation of liability
+                        </h2>
+                        <p>
+                           Portfolio is provided "as is" without warranty of any
+                           kind, whether express or implied, including but not
+                           limited to the implied warranties of merchantability,
+                           fitness for a particular purpose, and
+                           non-infringement. In no event will we, the listed
+                           students, or the Developer Akademie, be liable for
+                           any direct, indirect, incidental, special,
+                           consequential or exemplary damages.
+                        </p>
+                     </section>
+                     <section class="legal-block">
+                        <h2>Indemnity</h2>
+                        <p>
+                           You agree to indemnify, defend and hold harmless us,
+                           the listed students, the Developer Akademie, and our
+                           affiliates, officers, directors, agents, and
+                           employees, from and against any claim, damage, loss,
+                           damage, cost, or liability (including reasonable
+                           legal fees) arising out of or relating to your use of
+                           Portfolio and/or your breach of this Legal Notice.
+                        </p>
+                     </section>
+                     <section class="legal-block">
+                        <h2>Disclaimer</h2>
+                        <p>
+                           The contents of this website have been created with
+                           the utmost care. However, I cannot guarantee the
+                           accuracy, completeness, or timeliness of the content.
+                           As a private provider of services, I am responsible
+                           for my own content on these pages according to
+                           general law.
+                        </p>
+                     </section>
+                     <p class="legal-meta">
+                        For any questions or notices, please contact us at
+                        <a href="mailto:3.j.yannic@gmail.com"
+                           >3.j.yannic@gmail.com</a
+                        >.
+                     </p>
+                     <p class="legal-meta">Date: July 26, 2025</p>
+                  </div>
+               </div>
+               <div class="contact-info">
+                  <div class="contact-info-top">
+                     <div class="contact-details">
+                        <a
+                           href="mailto:3.j.yannic@gmail.com"
+                           class="contact-detail-link">
+                           <span>&#9993;</span> E-Mail: 3.j.yannic@gmail.com
+                        </a>
+                        <a
+                           href="tel:+4915712345668"
+                           class="contact-detail-link">
+                           <span>&#128222;</span> Tel: 0157 123 456 68
+                        </a>
+                     </div>
+                  </div>
+                  <button class="arrow-btn-back" data-target="legal-p1">
+                     <div
+                        class="arrow-icon arrow-icon--back"
+                        aria-hidden="true"></div>
+                  </button>
+                  <div class="contact-footer">
+                     <a href="legal-notice.html">Legal notice</a>
+                     <a href="#">privacy policy</a>
+                     <span>&#169; Yannic Jundt 2025</span>
+                  </div>
+               </div>
+            </div>
+            <div class="contact-sidebar"></div>
+         </section>
+      </main>
 
-      <section>
-        <h2>Disclaimer</h2>
-        <p>
-          The contents of this website have been created with the utmost care. However, I cannot guarantee the accuracy, completeness, or timeliness of the content.
-        </p>
-      </section>
-    </main>
-  </body>
+      <script src="legal.js"></script>
+   </body>
 </html>
