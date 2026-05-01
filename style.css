@@ -94,7 +94,7 @@ img {
 }
 
 .section-headline {
-   font-size: clamp(2rem, 5vw, 4rem);
+   font-size: clamp(32px, 5vw, 64px);
    font-weight: 700;
    color: var(--color-main);
    margin-bottom: 2rem;

@@ -23,13 +23,13 @@
 }
 
 .about-content h3 {
-   font-size: clamp(2rem, 4vw, 3.5rem);
+   font-size: clamp(32px, 4vw, 56px);
    font-weight: 700;
    color: var(--color-white);
 }
 
 .about-description {
-   font-size: 1.1rem;
+   font-size: 18px;
    line-height: 1.7;
    color: var(--color-white);
    text-align: justify;
@@ -56,6 +56,6 @@
 }
 
 .fact-icon {
-   font-size: 2rem;
+   font-size: 32px;
    color: var(--color-main);
 }

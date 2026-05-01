@@ -15,7 +15,7 @@
 
 .back-link {
    color: var(--color-main);
-   font-size: 0.95rem;
+   font-size: 15px;
    transition: opacity 0.2s;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .legal-main h1 {
-   font-size: clamp(2rem, 4vw, 3.5rem);
+   font-size: clamp(32px, 4vw, 56px);
    font-weight: 700;
    color: var(--color-main);
 }
@@ -36,13 +36,13 @@
 }
 
 .legal-main h2 {
-   font-size: 1.2rem;
+   font-size: 19px;
    font-weight: 700;
    color: var(--color-white);
 }
 
 .legal-main p {
-   font-size: 1rem;
+   font-size: 16px;
    line-height: 1.7;
    color: var(--color-white);
 }
