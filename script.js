@@ -77,8 +77,19 @@ function initLangToggle() {
   });
 }
 
+/** Marks the form as validated on submit so invalid fields turn red. */
+function initContactForm() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.classList.add('validated');
+  });
+}
+
 initArrowButtons();
 initNavLinks();
 initScrollObserver();
 initWheelScroll();
 initLangToggle();
+initContactForm();

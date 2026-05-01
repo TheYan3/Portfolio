@@ -23,11 +23,11 @@
    height: 560px;
    flex-shrink: 0;
    background-color: color-mix(in srgb, var(--color-main) 50%, transparent);
-   border-radius: 12px;
+   border-radius: 30px;
    padding: 24px;
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
    gap: 16px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .project-number {
-   font-size: 4rem;
+   font-size: 100px;
    font-weight: 700;
    color: transparent;
    -webkit-text-stroke: 2px var(--color-main);
@@ -48,8 +48,8 @@
 }
 
 .project-card h3 {
-   font-size: clamp(1.4rem, 2vw, 2rem);
-   font-weight: 700;
+   font-size: 54px;
+   font-weight: 400;
    color: var(--color-main);
 }
 
@@ -64,7 +64,7 @@
    list-style: none;
    display: flex;
    flex-direction: column;
-   gap: 12px;
+   gap: 24px;
    flex: 1;
 }
 
@@ -81,18 +81,18 @@
    position: absolute;
    left: 0;
    color: var(--color-white);
-   font-size: 0.85rem;
-   line-height: 1.6;
+   font-size: 14px;
+   line-height: 2.6;
 }
 
 .detail-label {
-   font-size: 1rem;
+   font-size: 24px;
    font-weight: 700;
    color: var(--color-white);
 }
 
 .project-details p {
-   font-size: 0.875rem;
+   font-size: 18px;
    line-height: 1.5;
    color: var(--color-white);
 }
@@ -100,16 +100,16 @@
 .project-card-media {
    display: flex;
    flex-direction: column;
+   align-items: center;
    gap: 12px;
    flex-shrink: 0;
-   width: 280px;
+   width: 337px;
+   height: 100%;
 }
 
 .project-card-media img {
-   width: 100%;
-   height: 180px;
    object-fit: cover;
-   border-radius: 10px;
+   border-radius: 30px;
 }
 
 .project-links {
@@ -120,8 +120,32 @@
 
 .project-links .btn-primary,
 .project-links .btn-secondary {
-   font-size: 0.85rem;
+   font-size: 14px;
    padding: 8px 20px;
+}
+
+.project-card-footer {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   padding-left: 20px;
+   position: relative;
+}
+
+.project-card-footer::before {
+   content: "○";
+   position: absolute;
+   left: 0;
+   color: var(--color-white);
+   font-size: 14px;
+   line-height: 2.6;
+}
+
+.project-card-footer p {
+   font-size: 18px;
+   line-height: 1.5;
+   color: var(--color-white);
 }
 
 .project-card--ongoing {
@@ -131,7 +155,7 @@
 }
 
 .project-card--ongoing p {
-   font-size: 0.95rem;
+   font-size: 15px;
    line-height: 1.6;
    color: var(--color-white);
    flex: 1;
@@ -142,5 +166,5 @@
    height: 45px;
    padding: 13px 30px;
    border-radius: 30px;
-   font-size: 0.9rem;
+   font-size: 14px;
 }
