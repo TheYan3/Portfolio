@@ -15,10 +15,9 @@ Visit the portfolio here: [yannicjundt.de](https://yannicjundt.de)
 The portfolio itself is built with:
 
 <p>
-  <img src="assets/img/Icons/html.svg" alt="HTML" width="42" />
-  <img src="assets/img/Icons/Icons.svg" alt="CSS" width="42" />
+  <img src="assets/img/Icons/html.svg" alt="HTML" width="40" />
+  <img src="assets/img/Icons/Icons.svg" alt="CSS" width="40" />
   <img src="assets/img/Icons/Javascript.svg" alt="JavaScript" width="42" />
-  <img src="assets/img/buttons/Email%20button.svg" alt="Contact" width="42" />
 </p>
 
 - HTML
