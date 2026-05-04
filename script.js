@@ -84,6 +84,31 @@ function initContactForm() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     form.classList.add('validated');
+    if (!form.checkValidity()) return;
+
+    const btn = form.querySelector('[type="submit"]') || form.querySelector('button');
+    if (btn) btn.disabled = true;
+
+    fetch('send-mail.php', {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.success) {
+        form.reset();
+        form.classList.remove('validated');
+        const msg = document.createElement('p');
+        msg.textContent = 'Deine Nachricht wurde erfolgreich versendet!';
+        msg.style.cssText = 'color:#00e5c3;margin-top:1rem;font-weight:600;';
+        form.appendChild(msg);
+        setTimeout(() => msg.remove(), 5000);
+      } else {
+        alert(data.error || 'Versand fehlgeschlagen. Bitte versuche es spter erneut.');
+      }
+    })
+    .catch(() => alert('Netzwerkfehler. Bitte versuche es spter erneut.'))
+    .finally(() => { if (btn) btn.disabled = false; });
   });
 }
 
