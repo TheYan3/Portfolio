@@ -20,20 +20,20 @@ The portfolio itself is built with:
   <img src="assets/img/Icons/Javascript.svg" alt="JavaScript" width="42" />
 </p>
 
-- HTML
-- CSS
-- JavaScript
-- PHPMailer for the contact form
+-  HTML
+-  CSS
+-  JavaScript
+-  PHPMailer for the contact form
 
 ## Features
 
-- Responsive portfolio website
-- Horizontal section-based navigation
-- Smooth scrolling between sections
-- Project showcase with live/demo and GitHub link areas
-- Skills overview with custom icons
-- Contact form connected through a PHP mail setup
-- Legal notice page
+-  Responsive portfolio website
+-  Horizontal section-based navigation
+-  Smooth scrolling between sections
+-  Project showcase with live/demo and GitHub link areas
+-  Skills overview with custom icons
+-  Contact form connected through a PHP mail setup
+-  Legal notice page
 
 ## Projects
 
@@ -65,7 +65,6 @@ GitHub repository: [TheYan3/Portfolio](https://github.com/TheYan3/Portfolio)
 
 ## Contact
 
-- Email: [3.j.yannic@gmail.com](mailto:3.j.yannic@gmail.com)
-- GitHub: [github.com/TheYan3](https://github.com/TheYan3)
-- LinkedIn: [LinkedIn profile placeholder](https://linkedin.com)
-
+-  Email: [Mail](mailto:yannic-jundt@gmx.de)
+-  GitHub: [github](https://github.com/TheYan3)
+-  LinkedIn: [LinkedIn](https://linkedin.com)
