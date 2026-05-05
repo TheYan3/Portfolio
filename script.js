@@ -89,9 +89,11 @@ function initContactForm() {
     const btn = form.querySelector('[type="submit"]') || form.querySelector('button');
     if (btn) btn.disabled = true;
 
+    const data = Object.fromEntries(new FormData(form));
     fetch('send-mail.php', {
       method: 'POST',
-      body: new FormData(form)
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: data.name, email: data.email, message: data.message })
     })
     .then(r => r.json())
     .then(data => {
