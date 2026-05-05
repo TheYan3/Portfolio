@@ -5,7 +5,7 @@ header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json; charset=utf-8");
 
-$siteEmail = "3.j.yannic@gmail.com";
+$siteEmail = "yannic-jundt@gmx.de";
 
 switch ($_SERVER['REQUEST_METHOD']) {
 
@@ -14,18 +14,9 @@ switch ($_SERVER['REQUEST_METHOD']) {
         exit;
 
     case 'POST':
-        $json = file_get_contents('php://input');
-        $params = json_decode($json);
-
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            http_response_code(400);
-            echo json_encode(['success' => false, 'error' => 'Invalid JSON']);
-            exit;
-        }
-
-        $email = $params->email ?? '';
-        $name = $params->name ?? '';
-        $userMessage = $params->message ?? '';
+        $email = $_POST['email'] ?? '';
+        $name = $_POST['name'] ?? '';
+        $userMessage = $_POST['message'] ?? '';
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL) || empty($name) || empty($userMessage)) {
             http_response_code(400);
