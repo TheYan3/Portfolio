@@ -1,0 +1,155 @@
+/* Desktop: Toggle-Button unsichtbar */
+.project-toggle-btn {
+   display: none;
+}
+
+/* =========================================================
+   MOBILE PROJECTS  –  max-width: 768px
+   Projektkarten auf volle Breite, eingeklappt mit
+   Expand/Collapse-Toggle.
+   ========================================================= */
+@media (max-width: 768px) {
+   #my-work {
+      width: 100%;
+      flex: none;
+      padding-right: 20px;
+   }
+
+   .work-wrapper {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+   }
+
+   .projects-grid {
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+   }
+
+   /* ---- Karte Basis ---- */
+   .project-card {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      gap: 0;
+   }
+
+   .project-card-main {
+      flex-direction: column;
+   }
+
+   .project-card-content {
+      width: 100%;
+   }
+
+   .project-card-header {
+      gap: 12px;
+      cursor: pointer;
+   }
+
+   .project-number {
+      font-size: 40px;
+   }
+
+   .project-card h3 {
+      font-size: 24px;
+   }
+
+   /* ---- Collapsible-Bereich ---- */
+   .project-card-collapsible {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease;
+   }
+
+   .project-card.is-expanded .project-card-collapsible {
+      max-height: 2000px;
+   }
+
+   .project-card-body {
+      flex-direction: column;
+      gap: 16px;
+      padding-top: 16px;
+   }
+
+   .project-card-media {
+      display: none;
+      width: 100%;
+      height: auto;
+   }
+
+   .project-card.is-expanded .project-card-media {
+      display: flex;
+   }
+
+   .project-card-media img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+   }
+
+   .project-links {
+      justify-content: center;
+      margin-top: 8px;
+   }
+
+   .project-card-footer {
+      padding-top: 8px;
+   }
+
+   .project-about {
+      margin-top: 12px;
+   }
+
+   .project-about p {
+      font-size: 15px;
+   }
+
+   /* ---- Toggle-Button ---- */
+   .project-toggle-btn {
+      display: block;
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--color-main);
+      font-family: var(--font-main);
+      font-size: 14px;
+      cursor: pointer;
+      padding: 12px 0 0;
+      text-align: center;
+      text-decoration: underline;
+   }
+
+   /* ---- Bottom "Show me less" button ---- */
+   .project-toggle-btn--bottom {
+      display: none;
+      padding: 16px 0 24px;
+   }
+
+   .project-card-wrapper:has(.project-card.is-expanded) .project-toggle-btn--bottom {
+      display: block;
+   }
+
+   .project-card.is-expanded .project-toggle-btn:not(.project-toggle-btn--bottom) {
+      display: none;
+   }
+
+   /* ---- Ongoing card ---- */
+   .project-card--ongoing {
+      width: 100%;
+      height: auto;
+   }
+
+   .project-card--ongoing .project-number {
+      font-size: 36px;
+   }
+
+   .project-card--ongoing h3 {
+      font-size: 22px;
+   }
+
+   .project-card--ongoing .btn-primary {
+      align-self: center;
+   }
+}

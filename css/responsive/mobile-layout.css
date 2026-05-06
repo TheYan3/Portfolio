@@ -1,0 +1,58 @@
+/* =========================================================
+   MOBILE LAYOUT  –  max-width: 768px
+   Schaltet das horizontale Desktop-Scroll-Layout auf
+   vertikales normales Seitenscrolling um.
+   ========================================================= */
+@media (max-width: 768px) {
+   body {
+      display: block;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: auto;
+   }
+
+   .sidebar-nav {
+      display: none;
+   }
+
+   .hero-header {
+      display: none;
+   }
+
+   .scroll-container {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: visible;
+      margin-left: 0;
+   }
+
+   .section {
+      flex: none;
+      width: 100%;
+      height: auto;
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 40px 20px;
+   }
+
+   .section-label {
+      writing-mode: horizontal-tb;
+      -webkit-text-stroke: 1px var(--color-main);
+      transform: none;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      align-self: flex-start;
+      margin-bottom: 24px;
+   }
+
+   .arrow-btn,
+   .arrow-btn-back {
+      display: none;
+   }
+}
