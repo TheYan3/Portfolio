@@ -56,6 +56,14 @@
 }
 
 .fact-icon {
-   font-size: 32px;
-   color: var(--color-main);
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   background-color: var(--color-main);
+   mask-size: contain;
+   mask-repeat: no-repeat;
+   mask-position: center;
+   -webkit-mask-size: contain;
+   -webkit-mask-repeat: no-repeat;
+   -webkit-mask-position: center;
 }
