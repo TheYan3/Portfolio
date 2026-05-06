@@ -1,121 +1,22 @@
-/** Scrolls the main container to the target section by id. */
-function scrollToSection(targetId) {
-  const target = document.getElementById(targetId);
-  if (target) {
-    target.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
-  }
-}
-
-/** Returns the id of the section closest to the left edge of the container. */
-function getActiveSectionId(container, sections) {
-  let closest = null;
-  let minDist = Infinity;
-
-  sections.forEach((section) => {
-    const dist = Math.abs(section.getBoundingClientRect().left - container.getBoundingClientRect().left);
-    if (dist < minDist) {
-      minDist = dist;
-      closest = section.id;
-    }
-  });
-
-  return closest;
-}
-
-/** Updates the active state on nav links based on current scroll position. */
-function updateActiveNav(activeSectionId) {
-  document.querySelectorAll('.nav-links a').forEach((link) => {
-    const href = link.getAttribute('href').replace('#', '');
-    link.classList.toggle('active', href === activeSectionId);
-  });
-}
-
-/** Translates vertical wheel input to horizontal scroll. */
-function initWheelScroll() {
-  const container = document.querySelector('.scroll-container');
-  container.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    container.scrollLeft += e.deltaY || e.deltaX;
-  }, { passive: false });
-}
-
-/** Initializes arrow button click handlers. */
-function initArrowButtons() {
-  document.querySelectorAll('.arrow-btn, .arrow-btn-back').forEach((btn) => {
-    btn.addEventListener('click', () => scrollToSection(btn.dataset.target));
-  });
-}
-
-/** Initializes nav link click handlers. */
-function initNavLinks() {
-  document.querySelectorAll('.nav-links a').forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      scrollToSection(link.getAttribute('href').replace('#', ''));
-    });
-  });
-}
-
-/** Observes scroll position and updates active nav link. */
-function initScrollObserver() {
-  const container = document.querySelector('.scroll-container');
-  const sections = document.querySelectorAll('.section');
-
-  container.addEventListener('scroll', () => {
-    const activeId = getActiveSectionId(container, sections);
-    updateActiveNav(activeId);
-  }, { passive: true });
-}
-
-/** Toggles the active language button in the header. */
-function initLangToggle() {
-  document.querySelectorAll('.lang-toggle .lang').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.lang-toggle .lang').forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-    });
-  });
-}
-
-/** Marks the form as validated on submit so invalid fields turn red. */
-function initContactForm() {
-  const form = document.querySelector('.contact-form');
-  if (!form) return;
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    form.classList.add('validated');
-    if (!form.checkValidity()) return;
-
-    const btn = form.querySelector('[type="submit"]') || form.querySelector('button');
-    if (btn) btn.disabled = true;
-
-    const fd = new FormData(form);
-    fetch('send-mail.php', {
-      method: 'POST',
-      body: new URLSearchParams({ name: fd.get('name'), email: fd.get('email'), message: fd.get('message') })
-    })
-    .then(r => r.json())
-    .then(data => {
-      if (data.success) {
-        form.reset();
-        form.classList.remove('validated');
-        const msg = document.createElement('p');
-        msg.textContent = 'Deine Nachricht wurde erfolgreich versendet!';
-        msg.style.cssText = 'color:#00e5c3;margin-top:1rem;font-weight:600;';
-        form.appendChild(msg);
-        setTimeout(() => msg.remove(), 5000);
-      } else {
-        alert(data.error || 'Versand fehlgeschlagen. Bitte versuche es spter erneut.');
-      }
-    })
-    .catch(() => alert('Netzwerkfehler. Bitte versuche es spter erneut.'))
-    .finally(() => { if (btn) btn.disabled = false; });
-  });
-}
+renderSocialLinks();
+renderAboutFacts();
+renderReferences();
+renderSkills();
+renderProjects();
 
 initArrowButtons();
 initNavLinks();
 initScrollObserver();
 initWheelScroll();
 initLangToggle();
+initBurgerMenu();
 initContactForm();
+initProjectExpand();
+
+if (isMobile()) {
+   initReferencesCarousel();
+}
+
+window.addEventListener("resize", () => {
+   if (isMobile()) initReferencesCarousel();
+}, { once: true });

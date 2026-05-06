@@ -18,8 +18,58 @@
       <link rel="stylesheet" href="css/projects.css" />
       <link rel="stylesheet" href="css/references.css" />
       <link rel="stylesheet" href="css/contact.css" />
+      <!-- Responsive -->
+      <link rel="stylesheet" href="css/responsive/mobile-layout.css" />
+      <link rel="stylesheet" href="css/responsive/mobile-nav.css" />
+      <link rel="stylesheet" href="css/responsive/mobile-sections.css" />
+      <link rel="stylesheet" href="css/responsive/mobile-projects.css" />
+      <link rel="stylesheet" href="css/responsive/mobile-references.css" />
    </head>
    <body>
+      <!-- Mobile Top-Nav -->
+      <nav class="mobile-top-nav">
+         <a href="#hero" class="mobile-nav-logo">
+            <svg viewBox="0 0 120 120" class="logo-ring" aria-hidden="true">
+               <path
+                  id="logo-arc-mob"
+                  d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"
+                  fill="none" />
+               <text font-size="10.5" letter-spacing="1.5">
+                  <textPath href="#logo-arc-mob">
+                     frontend developer • frontend developer •
+                  </textPath>
+               </text>
+            </svg>
+            <span class="logo-initials">YJ</span>
+         </a>
+         <button
+            class="burger-btn"
+            aria-label="Menü öffnen"
+            aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+         </button>
+      </nav>
+
+      <!-- Mobile Overlay-Menü -->
+      <div class="mobile-menu-overlay" aria-hidden="true">
+         <button class="mobile-menu-close" aria-label="Menü schließen">
+            &#x2715;
+         </button>
+         <nav class="mobile-menu-nav">
+            <a href="#why-me" data-i18n="nav.why-me">Why me</a>
+            <a href="#skills" data-i18n="nav.skills-mobile">My Skill Set</a>
+            <a href="#my-work" data-i18n="nav.work">My Work</a>
+            <a href="#contact" data-i18n="nav.contact-mobile">Contact me</a>
+            <div class="mobile-menu-lang">
+               <button class="lang" data-lang="de">DE</button>
+               <span>|</span>
+               <button class="lang active" data-lang="en">EN</button>
+            </div>
+         </nav>
+      </div>
+
       <nav class="sidebar-nav">
          <div class="nav-logo">
             <svg viewBox="0 0 120 120" class="logo-ring" aria-hidden="true">
@@ -36,49 +86,19 @@
             <span class="logo-initials">YJ</span>
          </div>
          <ul class="nav-links">
-            <li><a href="#why-me">Why me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#my-work">My Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#why-me" data-i18n="nav.why-me">Why me</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#my-work" data-i18n="nav.work">My Work</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
          </ul>
       </nav>
 
       <header class="hero-header">
-         <div class="social-links">
-            <a
-               href="mailto:3.j.yannic@gmail.com"
-               class="socialContainer"
-               aria-label="Email">
-               <svg class="socialSvg" viewBox="0 0 16 16">
-                  <path
-                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-               </svg>
-            </a>
-            <a
-               href="https://linkedin.com"
-               target="_blank"
-               class="socialContainer"
-               aria-label="LinkedIn">
-               <svg class="socialSvg" viewBox="0 0 448 512">
-                  <path
-                     d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-               </svg>
-            </a>
-            <a
-               href="https://github.com/TheYan3"
-               target="_blank"
-               class="socialContainer"
-               aria-label="GitHub">
-               <svg class="socialSvg" viewBox="0 0 16 16">
-                  <path
-                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-               </svg>
-            </a>
-         </div>
+         <div class="social-links"></div>
          <div class="lang-toggle">
-            <button class="lang active" data-lang="de">DE</button>
+            <button class="lang" data-lang="de">DE</button>
             <span class="lang-sep">|</span>
-            <button class="lang" data-lang="en">EN</button>
+            <button class="lang active" data-lang="en">EN</button>
          </div>
       </header>
 
@@ -93,6 +113,7 @@
                <div class="hero-text">
                   <h1 class="hero-name">Yannic Jundt</h1>
                   <p class="hero-title">Frontend Developer</p>
+                  <p class="hero-location">Lahr/Schwarzwald</p>
                </div>
             </div>
             <button class="arrow-btn arrow-btn--hero" data-target="why-me">
@@ -102,9 +123,9 @@
 
          <section id="why-me" class="section">
             <div class="about-content">
-               <div class="section-label">Why me</div>
+               <div class="section-label" data-i18n="section.why-me">Why me</div>
                <div class="about-body">
-                  <p class="about-description">
+                  <p class="about-description" data-i18n="about.description">
                      I’m a frontend developer focused on translating designs
                      into clean, precise, and high-performance code. I work in a
                      detail-oriented and structured way, with a strong emphasis
@@ -116,18 +137,9 @@
                      build a holistic understanding of applications from end to
                      end.
                   </p>
-                  <h3>I am</h3>
-                  <div class="about-facts">
-                     <div class="fact">
-                        <span class="fact-icon">&#128205;</span>
-                        <span>located in Lahr Schwarzwald</span>
-                     </div>
-                     <div class="fact">
-                        <span class="fact-icon">&#128187;</span>
-                        <span>open to work remote</span>
-                     </div>
-                  </div>
-                  <a href="#contact" class="btn-primary about-cta"
+                  <h3 data-i18n="about.i-am">I am</h3>
+                  <div class="about-facts"></div>
+                  <a href="#contact" class="btn-primary about-cta" data-i18n="about.cta"
                      >Contact me</a
                   >
                </div>
@@ -139,118 +151,18 @@
 
          <section id="skills" class="section">
             <div class="skills-wrapper">
-               <div class="section-label">My Skill Set</div>
+               <div class="section-label" data-i18n="section.skills">My Skill Set</div>
                <div class="skills-content">
-                  <p class="skills-description">
-                     Ich verfüge über fundierte Kenntnisse in der
-                     Frontend-Entwicklung mit HTML, CSS und JavaScript sowie
-                     Erfahrung mit modernen Frameworks wie React. Ich arbeite
-                     sicher mit responsivem Design, komponentenbasierter
-                     Architektur und gängigen Entwicklungs-Tools wie Git. Zudem
-                     habe ich Erfahrung in der Umsetzung von UI/UX-Konzepten und
-                     der Optimierung von Performance. Durch die Arbeit an
-                     unterschiedlichen Projekten konnte ich meine Fähigkeiten im
-                     strukturierten Aufbau von Anwendungen und im Umgang mit
-                     verschiedenen Technologien kontinuierlich erweitern.
+                  <p class="skills-description" data-i18n="skills.description">
+                     I have solid knowledge in frontend development with HTML, CSS and JavaScript,
+                     as well as experience with modern frameworks like Angular. I work confidently
+                     with responsive design, component-based architecture, and common development
+                     tools like Git. I also have experience implementing UI/UX concepts and
+                     optimizing performance. Through working on various projects, I have
+                     continuously expanded my skills in building structured applications and
+                     handling different technologies.
                   </p>
-                  <div class="skills-grid">
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/Angular-new-logo-small 1.svg');
-                              -webkit-mask-image: url('assets/img/Icons/Angular-new-logo-small 1.svg');
-                           "></div>
-                        <span>Angular</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/Icon.svg');
-                              -webkit-mask-image: url('assets/img/Icons/Icon.svg');
-                           "></div>
-                        <span>TypeScript</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/Javascript.svg');
-                              -webkit-mask-image: url('assets/img/Icons/Javascript.svg');
-                           "></div>
-                        <span>JavaScript</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/html.svg');
-                              -webkit-mask-image: url('assets/img/Icons/html.svg');
-                           "></div>
-                        <span>HTML</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/Icons.svg');
-                              -webkit-mask-image: url('assets/img/Icons/Icons.svg');
-                           "></div>
-                        <span>CSS</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/Api.svg');
-                              -webkit-mask-image: url('assets/img/Icons/Api.svg');
-                           "></div>
-                        <span>REST-API</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/Skills all courses.svg');
-                              -webkit-mask-image: url('assets/img/Icons/Skills all courses.svg');
-                           "></div>
-                        <span>Supabase</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/git.svg');
-                              -webkit-mask-image: url('assets/img/Icons/git.svg');
-                           "></div>
-                        <span>Git</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/scrum.svg');
-                              -webkit-mask-image: url('assets/img/Icons/scrum.svg');
-                           "></div>
-                        <span>Scrum</span>
-                     </div>
-                     <div class="skill-item">
-                        <div
-                           class="skill-icon"
-                           style="
-                              mask-image: url('assets/img/Icons/Firebase.svg');
-                              -webkit-mask-image: url('assets/img/Icons/Firebase.svg');
-                           "></div>
-                        <span>Firebase</span>
-                     </div>
-                     <div class="skill-item">
-                        <img
-                           src="assets/img/Icons/Group 42.svg"
-                           alt="Challenge me" />
-                        <span>Challenge me</span>
-                     </div>
-                  </div>
+                  <div class="skills-grid"></div>
                </div>
             </div>
             <button class="arrow-btn arrow-btn--skills" data-target="my-work">
@@ -260,158 +172,8 @@
 
          <section id="my-work" class="section">
             <div class="work-wrapper">
-               <div class="section-label">My Work</div>
-               <div class="projects-grid">
-                  <article class="project-card">
-                     <div class="project-card-header">
-                        <span class="project-number">1</span>
-                        <h3>Project Join</h3>
-                     </div>
-                     <div class="project-card-body">
-                        <ul class="project-details">
-                           <li>
-                              <span class="detail-label"
-                                 >About the project</span
-                              >
-                              <p>
-                                 Task manager inspired by the Kanban System.
-                                 Create and organize tasks using drag and drop
-                                 functions, assign users and categories.
-                              </p>
-                           </li>
-                           <li>
-                              <span class="detail-label"
-                                 >Technologies I have used</span
-                              >
-                              <p>Angular, TypeScript, HTML, CSS, Firebase</p>
-                           </li>
-                        </ul>
-                        <div class="project-card-media">
-                           <img src="assets/img/Join.svg" alt="Project Join" />
-                           <div class="project-links">
-                              <a href="#" class="btn-secondary">GitHub</a>
-                              <a href="#" class="btn-primary">Live Test</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="project-card-footer">
-                        <span class="detail-label">What I have learned</span>
-                        <p>
-                           Maybe you used a certain technology for the first
-                           time? Have you learnt more about how to keep your
-                           code clean or how to organise the components in your
-                           projects?
-                        </p>
-                     </div>
-                  </article>
-
-                  <article class="project-card">
-                     <div class="project-card-header">
-                        <span class="project-number">2</span>
-                        <h3>Project Fallen Angeles</h3>
-                     </div>
-                     <div class="project-card-body">
-                        <ul class="project-details">
-                           <li>
-                              <span class="detail-label"
-                                 >About the project</span
-                              >
-                              <p>
-                                 Jump, run and Slice game based on
-                                 object-oriented approach. Help the fallen
-                                 Angeles to find there feathers to become back
-                                 ther streanght to fight the evile.
-                              </p>
-                           </li>
-                           <li>
-                              <span class="detail-label"
-                                 >Technologies I have used</span
-                              >
-                              <p>JavaScript, HTML, CSS</p>
-                           </li>
-                        </ul>
-                        <div class="project-card-media">
-                           <img
-                              src="assets/img/Fallen_Angeles.png"
-                              alt="Project Fallen Angeles" />
-                           <div class="project-links">
-                              <a href="#" class="btn-secondary">GitHub</a>
-                              <a href="#" class="btn-primary">Live Test</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="project-card-footer">
-                        <span class="detail-label"
-                           >My group-projects experience</span
-                        >
-                        <p>
-                           How many people were in the team and what was your
-                           role? Describe your tasks in 1-2 sentences. It is
-                           nice to mention a good teamwork and cooperation.
-                        </p>
-                     </div>
-                  </article>
-
-                  <article class="project-card">
-                     <div class="project-card-header">
-                        <span class="project-number">3</span>
-                        <h3>Project DA Bubble</h3>
-                     </div>
-                     <div class="project-card-body">
-                        <ul class="project-details">
-                           <li>
-                              <span class="detail-label"
-                                 >About the project</span
-                              >
-                              <p>
-                                 This App revolutionizes team collaboration with
-                                 its intuitive interface, real-time messaging,
-                                 and robust channel organization.
-                              </p>
-                           </li>
-                           <li>
-                              <span class="detail-label"
-                                 >Technologies I have used</span
-                              >
-                              <p>JavaScript, HTML, CSS</p>
-                           </li>
-                        </ul>
-                        <div class="project-card-media">
-                           <img
-                              src="assets/img/projects/da-bubble.jpg"
-                              alt="Project DA Bubble" />
-                           <div class="project-links">
-                              <a href="#" class="btn-secondary">GitHub</a>
-                              <a href="#" class="btn-primary">Live Test</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="project-card-footer">
-                        <span class="detail-label"
-                           >My group-projects experience</span
-                        >
-                        <p>
-                           How many people were in the team and what was your
-                           role? Describe your tasks in 1-2 sentences. It is
-                           nice to mention a good teamwork and cooperation.
-                        </p>
-                     </div>
-                  </article>
-
-                  <article class="project-card project-card--ongoing">
-                     <div class="project-card-header">
-                        <span class="project-number">4</span>
-                        <h3>Ongoing project</h3>
-                     </div>
-                     <p>
-                        Are you currently working on a project? What is it about
-                        and what technologies are you using? Emphasise that good
-                        planning and execution are essential to the success of
-                        your work and to achieving great results.
-                     </p>
-                     <a href="#contact" class="btn-primary">Let's talk</a>
-                  </article>
-               </div>
+               <div class="section-label" data-i18n="section.work">My Work</div>
+               <div class="projects-grid"></div>
             </div>
             <button class="arrow-btn arrow-btn--work" data-target="references">
                <div class="arrow-icon" aria-hidden="true"></div>
@@ -420,43 +182,16 @@
 
          <section id="references" class="section">
             <div class="references-wrapper">
-               <div class="section-label">References</div>
+               <div class="section-label" data-i18n="section.references">References</div>
                <div class="references-content">
-                  <div class="reference-card">
-                     <blockquote>
-                        "Michael is a reliable and friendly person. Work in a
-                        structured way and write a clear code. I recommend him
-                        as a colleague."
-                     </blockquote>
-                     <div class="reference-divider"></div>
-                     <div class="reference-author">
-                        <p class="author-name">James Rugman</p>
-                        <p class="author-role">Project Join</p>
-                     </div>
+                  <h2 class="references-mobile-headline" data-i18n="references.headline">Need a teamplayer?</h2>
+                  <p class="references-subtitle" data-i18n="references.subtitle">
+                     Here what my colleagues said about me
+                  </p>
+                  <div class="carousel-viewport">
+                     <div class="carousel-track"></div>
                   </div>
-                  <div class="reference-card">
-                     <blockquote>
-                        "He is a trustworthy teamplayer and can cope with the
-                        stress of deadlines. Structured work and clear code."
-                     </blockquote>
-                     <div class="reference-divider"></div>
-                     <div class="reference-author">
-                        <p class="author-name">Evelyn Marx</p>
-                        <p class="author-role">Project DA Bubble</p>
-                     </div>
-                  </div>
-                  <div class="reference-card">
-                     <blockquote>
-                        "Michael had to develop, format and deliver content in
-                        collaboration with the team members. He is a reliable
-                        and friendly person."
-                     </blockquote>
-                     <div class="reference-divider"></div>
-                     <div class="reference-author">
-                        <p class="author-name">Noah Mueller</p>
-                        <p class="author-role">Project Sharkie</p>
-                     </div>
-                  </div>
+                  <div class="carousel-dots"></div>
                </div>
             </div>
             <button
@@ -468,22 +203,25 @@
 
          <section id="contact" class="section">
             <div class="contact-wrapper">
-               <div class="section-label">Contact me</div>
+               <div class="section-label" data-i18n="section.contact">Contact me</div>
                <div class="contact-body">
                   <form class="contact-form" novalidate>
                      <input
                         type="text"
                         name="name"
                         placeholder="Your name"
+                        data-i18n-placeholder="contact.placeholder.name"
                         required />
                      <input
                         type="email"
                         name="email"
                         placeholder="Your e-mail"
+                        data-i18n-placeholder="contact.placeholder.email"
                         required />
                      <textarea
                         name="message"
                         placeholder="Your message"
+                        data-i18n-placeholder="contact.placeholder.message"
                         rows="6"
                         required></textarea>
                      <div class="contact-privacy">
@@ -492,20 +230,20 @@
                            id="privacy-check"
                            name="privacy"
                            required />
-                        <label for="privacy-check">
+                        <label for="privacy-check" data-i18n-html="contact.privacy">
                            I've read the
                            <a href="#" class="privacy-link">privacy policy</a>
                            and agree to the processing of my data as outlined.
                         </label>
                      </div>
-                     <button type="submit" class="btn-secondary contact-send">
+                     <button type="submit" class="btn-secondary contact-send" data-i18n="contact.send">
                         Send
                      </button>
                   </form>
                   <div class="contact-info">
                      <div class="contact-info-top">
-                        <p class="contact-tagline">Let us work together.</p>
-                        <p class="contact-description">
+                        <p class="contact-tagline" data-i18n="contact.tagline">Let us work together.</p>
+                        <p class="contact-description" data-i18n="contact.description">
                            Encourage people to contact you and describe what
                            role you are interested in. Express confidence in
                            your ability to make a meaningful contribution to a
@@ -531,9 +269,47 @@
                            aria-hidden="true"></div>
                      </button>
                      <div class="contact-footer">
-                        <a href="legal-notice.html">Legal notice</a>
-                        <a href="#">privacy policy</a>
-                        <span>&#169; Yannic Jundt 2025</span>
+                        <!-- Mobile: Social Icons -->
+                        <div class="contact-footer-social"></div>
+
+                        <!-- Mobile: Grüner Footer-Block -->
+                        <div class="contact-footer-green">
+                           <a href="#hero" class="contact-footer-logo">
+                              <svg
+                                 viewBox="0 0 120 120"
+                                 class="logo-ring"
+                                 aria-hidden="true">
+                                 <path
+                                    id="logo-arc-footer"
+                                    d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"
+                                    fill="none" />
+                                 <text font-size="10.5" letter-spacing="1.5">
+                                    <textPath href="#logo-arc-footer">
+                                       frontend developer • frontend developer •
+                                    </textPath>
+                                 </text>
+                              </svg>
+                              <span class="logo-initials">YJ</span>
+                           </a>
+                           <span class="contact-footer-copy"
+                              >&#169; Yannic Jundt 2025</span
+                           >
+                           <div class="contact-footer-links">
+                              <a href="legal-notice.html" data-i18n="footer.legal">Legal notice</a>
+                              <a href="#" data-i18n="footer.privacy">privacy policy</a>
+                           </div>
+                        </div>
+
+                        <!-- Desktop: Copyright + Links -->
+                        <a href="legal-notice.html" class="footer-desktop-link" data-i18n="footer.legal"
+                           >Legal notice</a
+                        >
+                        <a href="#" class="footer-desktop-link" data-i18n="footer.privacy"
+                           >privacy policy</a
+                        >
+                        <span class="desktop-copy"
+                           >&#169; Yannic Jundt 2025</span
+                        >
                      </div>
                   </div>
                </div>
@@ -542,6 +318,15 @@
          </section>
       </main>
 
+      <script src="js/datenbank.js"></script>
+      <script src="js/translations.js"></script>
+      <script src="js/translator.js"></script>
+      <script src="js/template.js"></script>
+      <script src="js/navigation.js"></script>
+      <script src="js/burger-menu.js"></script>
+      <script src="js/projects.js"></script>
+      <script src="js/carousel.js"></script>
+      <script src="js/contact.js"></script>
       <script src="script.js"></script>
    </body>
 </html>
