@@ -39,8 +39,8 @@
 }
 
 .arrow-btn {
-   position: relative;
-   right: 40px;
+   position: absolute;
+   right: 24px;
    top: 50%;
    transform: translateY(-50%);
    background: none;
@@ -50,6 +50,12 @@
    display: flex;
    align-items: center;
    transition: transform 0.2s;
+}
+
+.arrow-container {
+   width: 0;
+   height: 100vh;
+   position: relative;
 }
 
 .arrow-icon {
@@ -72,7 +78,7 @@
 }
 
 .arrow-btn--hero {
-   top: 40%;
+   top: 39%;
 }
 .arrow-btn--why-me {
    top: 88%;

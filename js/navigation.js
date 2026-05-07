@@ -83,12 +83,3 @@ function initScrollObserver() {
    }, { passive: true });
 }
 
-/** Toggles the active language button. */
-function initLangToggle() {
-   document.querySelectorAll("[data-lang]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-         document.querySelectorAll("[data-lang]").forEach((b) => b.classList.remove("active"));
-         btn.classList.add("active");
-      });
-   });
-}

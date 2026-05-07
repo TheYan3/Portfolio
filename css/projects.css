@@ -24,7 +24,7 @@
 
 .project-card {
    width: 919px;
-   height: 560px;
+   height: 600px;
    flex-shrink: 0;
    background-color: color-mix(in srgb, var(--color-main) 50%, transparent);
    border-radius: 30px;

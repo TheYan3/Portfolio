@@ -18,7 +18,7 @@
    display: flex;
    flex-direction: column;
    gap: 40px;
-   max-width: 1040px;
+   padding-right: 60px;
 }
 
 .skills-description {
@@ -64,4 +64,15 @@
 
 .skill-item:hover {
    filter: drop-shadow(0 0 8px var(--color-main));
+}
+
+@media screen and (max-width: 990px) {
+   .skills-grid {
+      gap: 8px;
+   }
+
+   .skill-icon {
+      width: 40px;
+      height: 40px;
+   }
 }

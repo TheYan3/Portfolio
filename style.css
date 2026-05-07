@@ -12,7 +12,7 @@
    --font-main: "Quantico", sans-serif;
 
    --nav-width: 172px;
-   --section-width: calc(100vw - var(--nav-width));
+   --section-width: calc(100vw - var(--nav-width) - 80px);
    --section-height: 100vh;
 }
 
