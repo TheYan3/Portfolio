@@ -23,38 +23,41 @@ const socialLinks = [
 
 const references = [
    {
-      quote: "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
-      authorName: "James Rugman",
+      quote: "Die Zusammenarbeit mit Yannic bei Join war großartig. Er bringt nicht nur viel fachliches Know-how mit, sondern denkt stets praktisch und lösungsorientiert. Seine Art, zuverlässig und unkompliziert zu arbeiten, hat das Team spürbar bereichert. Ich kann Yannic jedem Projekt nur wärmstens empfehlen.",
+      authorName: "Matthias Arnoldy",
       authorRole: "Project Join",
    },
    {
-      quote: "He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.",
-      authorName: "Evelyn Marx",
-      authorRole: "Project DA Bubble",
+      quote: "Yannic ist ein echter Teamplayer, der auch unter Druck strukturiert und fokussiert arbeitet. Bei unserem gemeinsamen Spielprojekt hat er komplexe Anforderungen schnell verstanden und sauber umgesetzt. Sein Code ist klar, gut durchdacht und leicht zu erweitern – genau das, was man sich in einem Team wünscht.",
+      authorName: "Jonas Weber",
+      authorRole: "Project Fallen Angeles",
    },
    {
-      quote: "Michael had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person.",
-      authorName: "Noah Mueller",
-      authorRole: "Project Sharkie",
+      quote: "Die Zusammenarbeit mit Yannic im DA Bubble Projekt war äußerst produktiv. Er hat Eigenverantwortung übernommen, Probleme proaktiv angesprochen und immer konstruktive Lösungen eingebracht. Yannic ist jemand, auf den man sich verlassen kann – fachlich wie menschlich.",
+      authorName: "Laura Hoffmann",
+      authorRole: "Project DA Bubble",
    },
 ];
 
 const aboutFacts = [
-   { icon: "assets/img/Icons/icon-location.svg", text: "located in Lahr Schwarzwald" },
-   { icon: "assets/img/Icons/Icon Remote.svg",   text: "open to work remote" },
+   {
+      icon: "assets/img/Icons/icon-location.svg",
+      text: "located in Lahr Schwarzwald",
+   },
+   { icon: "assets/img/Icons/Icon Remote.svg", text: "open to work remote" },
 ];
 
 const skills = [
-   { name: "Angular",      icon: "assets/img/Icons/Angular-new-logo-small 1.svg" },
-   { name: "TypeScript",   icon: "assets/img/Icons/Icon.svg" },
-   { name: "JavaScript",   icon: "assets/img/Icons/Javascript.svg" },
-   { name: "HTML",         icon: "assets/img/Icons/html.svg" },
-   { name: "CSS",          icon: "assets/img/Icons/Icons.svg" },
-   { name: "REST-API",     icon: "assets/img/Icons/Api.svg" },
-   { name: "Supabase",     icon: "assets/img/Icons/Skills all courses.svg" },
-   { name: "Git",          icon: "assets/img/Icons/git.svg" },
-   { name: "Scrum",        icon: "assets/img/Icons/scrum.svg" },
-   { name: "Firebase",     icon: "assets/img/Icons/Firebase.svg" },
+   { name: "Angular", icon: "assets/img/Icons/Angular-new-logo-small 1.svg" },
+   { name: "TypeScript", icon: "assets/img/Icons/Icon.svg" },
+   { name: "JavaScript", icon: "assets/img/Icons/Javascript.svg" },
+   { name: "HTML", icon: "assets/img/Icons/html.svg" },
+   { name: "CSS", icon: "assets/img/Icons/Icons.svg" },
+   { name: "REST-API", icon: "assets/img/Icons/Api.svg" },
+   { name: "Supabase", icon: "assets/img/Icons/Skills all courses.svg" },
+   { name: "Git", icon: "assets/img/Icons/git.svg" },
+   { name: "Scrum", icon: "assets/img/Icons/scrum.svg" },
+   { name: "Firebase", icon: "assets/img/Icons/Firebase.svg" },
    { name: "Challenge me", img: "assets/img/Icons/Group 42.svg" },
 ];
 
@@ -68,7 +71,8 @@ const projects = [
       githubUrl: "#",
       liveUrl: "#",
       footerLabel: "What I have learned",
-      footerText: "Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?",
+      footerText:
+         "Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?",
    },
    {
       number: 2,
@@ -79,23 +83,26 @@ const projects = [
       githubUrl: "#",
       liveUrl: "#",
       footerLabel: "My group-projects experience",
-      footerText: "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation.",
+      footerText:
+         "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation.",
    },
    {
       number: 3,
       title: "Project DA Bubble",
       about: "This App revolutionizes team collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
       technologies: "JavaScript, HTML, CSS",
-      imgSrc: "assets/img/projects/da-bubble.jpg",
+      imgSrc: "assets/img/da-bubble.png",
       githubUrl: "#",
       liveUrl: "#",
       footerLabel: "My group-projects experience",
-      footerText: "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation.",
+      footerText:
+         "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation.",
    },
    {
       number: 4,
       title: "Ongoing project",
       ongoing: true,
-      description: "Are you currently working on a project? What is it about and what technologies are you using? Emphasise that good planning and execution are essential to the success of your work and to achieving great results.",
+      description:
+         "Are you currently working on a project? What is it about and what technologies are you using? Emphasise that good planning and execution are essential to the success of your work and to achieving great results.",
    },
 ];
