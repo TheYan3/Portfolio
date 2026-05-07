@@ -15,8 +15,58 @@
       <link rel="stylesheet" href="css/hero.css" />
       <link rel="stylesheet" href="css/contact.css" />
       <link rel="stylesheet" href="css/legal.css" />
+      <!-- Responsive -->
+      <link rel="stylesheet" href="css/responsive/tablet-large.css" />
+      <link rel="stylesheet" href="css/responsive/tablet-small.css" />
+      <link rel="stylesheet" href="css/responsive/mobile-layout.css" />
+      <link rel="stylesheet" href="css/responsive/mobile-nav.css" />
+      <link rel="stylesheet" href="css/responsive/mobile-sections.css" />
    </head>
    <body>
+      <!-- Mobile Top-Nav -->
+      <nav class="mobile-top-nav">
+         <a href="index.html" class="mobile-nav-logo">
+            <svg viewBox="0 0 120 120" class="logo-ring" aria-hidden="true">
+               <path
+                  id="logo-arc-mob"
+                  d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"
+                  fill="none" />
+               <text font-size="10.5" letter-spacing="1.5">
+                  <textPath href="#logo-arc-mob">
+                     frontend developer • frontend developer •
+                  </textPath>
+               </text>
+            </svg>
+            <span class="logo-initials">YJ</span>
+         </a>
+         <button
+            class="burger-btn"
+            aria-label="Menü öffnen"
+            aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+         </button>
+      </nav>
+
+      <!-- Mobile Overlay-Menü -->
+      <div class="mobile-menu-overlay" aria-hidden="true">
+         <button class="mobile-menu-close" aria-label="Menü schließen">
+            &#x2715;
+         </button>
+         <nav class="mobile-menu-nav">
+            <a href="index.html#why-me" data-i18n="nav.why-me">Why me</a>
+            <a href="index.html#skills" data-i18n="nav.skills-mobile">My Skill Set</a>
+            <a href="index.html#my-work" data-i18n="nav.work">My Work</a>
+            <a href="index.html#contact" data-i18n="nav.contact-mobile">Contact me</a>
+            <div class="mobile-menu-lang">
+               <button class="lang" data-lang="de">DE</button>
+               <span>|</span>
+               <button class="lang active" data-lang="en">EN</button>
+            </div>
+         </nav>
+      </div>
+
       <nav class="sidebar-nav">
          <div class="nav-logo">
             <svg viewBox="0 0 120 120" class="logo-ring" aria-hidden="true">
@@ -41,41 +91,11 @@
       </nav>
 
       <header class="hero-header">
-         <div class="social-links">
-            <a
-               href="mailto:3.j.yannic@gmail.com"
-               class="socialContainer"
-               aria-label="Email">
-               <svg class="socialSvg" viewBox="0 0 16 16">
-                  <path
-                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-               </svg>
-            </a>
-            <a
-               href="https://linkedin.com"
-               target="_blank"
-               class="socialContainer"
-               aria-label="LinkedIn">
-               <svg class="socialSvg" viewBox="0 0 448 512">
-                  <path
-                     d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-               </svg>
-            </a>
-            <a
-               href="https://github.com/TheYan3"
-               target="_blank"
-               class="socialContainer"
-               aria-label="GitHub">
-               <svg class="socialSvg" viewBox="0 0 16 16">
-                  <path
-                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-               </svg>
-            </a>
-         </div>
+         <div class="social-links"></div>
          <div class="lang-toggle">
-            <button class="lang active" data-lang="de">DE</button>
+            <button class="lang" data-lang="de">DE</button>
             <span class="lang-sep">|</span>
-            <button class="lang" data-lang="en">EN</button>
+            <button class="lang active" data-lang="en">EN</button>
          </div>
       </header>
 
@@ -139,9 +159,11 @@
                   </div>
                </div>
             </div>
-            <button class="arrow-btn" data-target="legal-p2">
-               <div class="arrow-icon" aria-hidden="true"></div>
-            </button>
+            <div class="arrow-container">
+               <button class="arrow-btn" data-target="legal-p2">
+                  <div class="arrow-icon" aria-hidden="true"></div>
+               </button>
+            </div>
          </section>
 
          <section id="legal-p2" class="section">
@@ -227,9 +249,9 @@
                         class="arrow-icon arrow-icon--back"
                         aria-hidden="true"></div>
                   </button>
-                  <div class="contact-footer">
-                     <a href="legal-notice.html">Legal notice</a>
-                     <a href="#">privacy policy</a>
+                  <div class="contact-footer desktop-copy">
+                     <a href="legal-notice.html" data-i18n="footer.legal">Legal notice</a>
+                     <a href="#" data-i18n="footer.privacy">privacy policy</a>
                      <span>&#169; Yannic Jundt 2025</span>
                   </div>
                </div>
@@ -238,6 +260,9 @@
          </section>
       </main>
 
-      <script src="js/legal.js"></script>
+      <script src="js/translations.js"></script>
+      <script src="js/navigation.js"></script>
+      <script src="js/burger-menu.js"></script>
+      <script src="js/translator.js"></script>
    </body>
 </html>

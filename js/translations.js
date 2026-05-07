@@ -15,6 +15,8 @@ const translations = {
 
       "about.description": "I'm a frontend developer focused on translating designs into clean, precise, and high-performance code. I work in a detail-oriented and structured way, with a strong emphasis on delivering reliable results. What sets me apart: I actively look for solutions—even beyond my current tech stack. I quickly learn new technologies and acquire exactly the knowledge needed to solve a problem effectively. My goal is to continuously grow into a fullstack developer and build a holistic understanding of applications from end to end.",
       "about.i-am": "I am",
+      "about.fact.location": "located in Lahr Schwarzwald",
+      "about.fact.remote": "open to work remote",
       "about.cta": "Contact me",
 
       "skills.description": "I have solid knowledge in frontend development with HTML, CSS and JavaScript, as well as experience with modern frameworks like Angular. I work confidently with responsive design, component-based architecture, and common development tools like Git. I also have experience implementing UI/UX concepts and optimizing performance. Through working on various projects, I have continuously expanded my skills in building structured applications and handling different technologies.",
@@ -23,12 +25,29 @@ const translations = {
       "references.subtitle": "Here what my colleagues said about me",
 
       "contact.tagline": "Let us work together.",
-      "contact.description": "Encourage people to contact you and describe what role you are interested in. Express confidence in your ability to make a meaningful contribution to a team through your expertise and enthusiasm for improving your skills.",
+      "contact.description": "Looking for a frontend developer who delivers clean, precise code and brings a structured mindset to every project? I'm open to new opportunities — whether that's a permanent role or freelance collaboration. Let's build something great together.",
       "contact.placeholder.name": "Your name",
       "contact.placeholder.email": "Your e-mail",
       "contact.placeholder.message": "Your message",
       "contact.privacy": "I've read the <a href=\"#\" class=\"privacy-link\">privacy policy</a> and agree to the processing of my data as outlined.",
       "contact.send": "Send",
+
+      "project.label.about": "About the project",
+      "project.label.tech": "Technologies I have used",
+      "project.label.learned": "What I have learned",
+      "project.label.group": "My group-projects experience",
+      "project.toggle.more": "Show me more",
+      "project.toggle.less": "Show me less",
+      "project.cta": "Let's talk",
+
+      "project.1.about": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "project.1.footer": "This project pushed me to apply TypeScript and object-oriented programming in a real game context. I structured the codebase with clear folder and data hierarchies, implemented precise hitbox calculations for collision detection, and built a modular skill system — all with a consistent focus on clean, readable code.",
+      "project.2.about": "Jump, run and Slice game based on object-oriented approach. Help the fallen Angeles to find their feathers to regain their strength and fight the evil.",
+      "project.2.footer": "A team of two — coordinating tasks, keeping the Kanban board up to date, and working through bugs together. Clear communication and shared ownership kept the project on track.",
+      "project.3.about": "This app revolutionizes team collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "project.3.footer": "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention good teamwork and cooperation.",
+      "project.4.title": "Ongoing project",
+      "project.4.description": "Are you currently working on a project? What is it about and what technologies are you using? Emphasise that good planning and execution are essential to achieving great results.",
 
       "footer.legal": "Legal notice",
       "footer.privacy": "privacy policy",
@@ -49,6 +68,8 @@ const translations = {
 
       "about.description": "Ich bin ein Frontend-Entwickler mit dem Fokus darauf, Designs in sauberen, präzisen und leistungsstarken Code umzusetzen. Ich arbeite detailorientiert und strukturiert, mit einem starken Anspruch an zuverlässige Ergebnisse. Was mich auszeichnet: Ich suche aktiv nach Lösungen – auch über meinen aktuellen Tech-Stack hinaus. Ich eigne mir neue Technologien schnell an und erarbeite mir genau das Wissen, das ich brauche, um ein Problem effektiv zu lösen. Mein Ziel ist es, kontinuierlich zum Fullstack-Entwickler zu wachsen und ein ganzheitliches Verständnis von Anwendungen aufzubauen.",
       "about.i-am": "Ich bin",
+      "about.fact.location": "wohnhaft in Lahr Schwarzwald",
+      "about.fact.remote": "offen für Remote-Arbeit",
       "about.cta": "Kontakt aufnehmen",
 
       "skills.description": "Ich verfüge über fundierte Kenntnisse in der Frontend-Entwicklung mit HTML, CSS und JavaScript sowie Erfahrung mit modernen Frameworks wie Angular. Ich arbeite sicher mit responsivem Design, komponentenbasierter Architektur und gängigen Entwicklungs-Tools wie Git. Zudem habe ich Erfahrung in der Umsetzung von UI/UX-Konzepten und der Optimierung von Performance. Durch die Arbeit an unterschiedlichen Projekten konnte ich meine Fähigkeiten im strukturierten Aufbau von Anwendungen und im Umgang mit verschiedenen Technologien kontinuierlich erweitern.",
@@ -57,12 +78,29 @@ const translations = {
       "references.subtitle": "Das sagen meine Kollegen über mich",
 
       "contact.tagline": "Lass uns zusammenarbeiten.",
-      "contact.description": "Beschreibe hier welche Rolle dich interessiert und lade Menschen ein, sich zu melden. Zeige Vertrauen in deine Fähigkeit, durch dein Fachwissen und deine Lernbereitschaft einen wertvollen Beitrag zu leisten.",
+      "contact.description": "Du suchst einen Frontend-Entwickler, der sauberen, präzisen Code liefert und mit strukturiertem Mindset an jedes Projekt herangeht? Ich bin offen für neue Möglichkeiten — ob Festanstellung oder freie Mitarbeit. Lass uns gemeinsam etwas Großartiges aufbauen.",
       "contact.placeholder.name": "Dein Name",
       "contact.placeholder.email": "Deine E-Mail",
       "contact.placeholder.message": "Deine Nachricht",
       "contact.privacy": "Ich habe die <a href=\"#\" class=\"privacy-link\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
       "contact.send": "Senden",
+
+      "project.label.about": "Über das Projekt",
+      "project.label.tech": "Verwendete Technologien",
+      "project.label.learned": "Was ich gelernt habe",
+      "project.label.group": "Meine Gruppenarbeit",
+      "project.toggle.more": "Mehr anzeigen",
+      "project.toggle.less": "Weniger anzeigen",
+      "project.cta": "Schreib mir",
+
+      "project.1.about": "Aufgabenverwaltung nach dem Kanban-System. Aufgaben erstellen und per Drag-and-Drop organisieren, Nutzer und Kategorien zuweisen.",
+      "project.1.footer": "Dieses Projekt hat mich dazu gebracht, TypeScript und objektorientierte Programmierung in einem echten Spielkontext anzuwenden. Ich habe die Codebasis mit klaren Ordner- und Datenstrukturen aufgebaut, präzise Hitbox-Berechnungen für die Kollisionserkennung implementiert und ein modulares Skill-System entwickelt — durchgehend mit dem Fokus auf sauberen, lesbaren Code.",
+      "project.2.about": "Jump-Run-and-Slice-Spiel auf Basis eines objektorientierten Ansatzes. Hilf den gefallenen Engeln, ihre Federn zu finden und ihre Stärke zurückzugewinnen.",
+      "project.2.footer": "Ein Zweier-Team — Aufgaben koordinieren, das Kanban-Board aktuell halten und Fehler gemeinsam analysieren. Klare Kommunikation und geteilte Verantwortung haben das Projekt auf Kurs gehalten.",
+      "project.3.about": "Diese App revolutioniert die Teamarbeit mit ihrer intuitiven Oberfläche, Echtzeit-Messaging und übersichtlicher Kanalstruktur.",
+      "project.3.footer": "Wie viele Personen waren im Team und welche Rolle hast du übernommen? Beschreibe deine Aufgaben in 1–2 Sätzen. Gute Teamarbeit und Kooperation sind gerne erwähnt.",
+      "project.4.title": "Laufendes Projekt",
+      "project.4.description": "Arbeitest du gerade an einem Projekt? Worum geht es und welche Technologien setzt du ein? Betone, dass gute Planung und Umsetzung entscheidend für den Erfolg sind.",
 
       "footer.legal": "Impressum",
       "footer.privacy": "Datenschutz",

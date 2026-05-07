@@ -9,6 +9,11 @@
       overflow-y: auto;
       overflow-x: hidden;
       height: auto;
+      scrollbar-width: none;
+   }
+
+   body::-webkit-scrollbar {
+      display: none;
    }
 
    .sidebar-nav {
@@ -54,5 +59,9 @@
    .arrow-btn,
    .arrow-btn-back {
       display: none;
+   }
+
+   .arrow-container {
+      height: 0;
    }
 }

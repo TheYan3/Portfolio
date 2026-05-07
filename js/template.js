@@ -9,8 +9,8 @@ function buildCardHeaderHTML(project) {
 /** Returns the about HTML of a project card. */
 function buildCardAboutHTML(project) {
    return `<div class="project-about">
-      <span class="detail-label">About the project</span>
-      <p>${project.about}</p>
+      <span class="detail-label" data-i18n="project.label.about">About the project</span>
+      <p data-i18n="${project.aboutKey}"></p>
    </div>`;
 }
 
@@ -30,7 +30,7 @@ function buildCardBodyHTML(project) {
    return `<div class="project-card-body">
       <ul class="project-details">
          <li>
-            <span class="detail-label">Technologies I have used</span>
+            <span class="detail-label" data-i18n="project.label.tech">Technologies I have used</span>
             <p>${project.technologies}</p>
          </li>
       </ul>
@@ -42,8 +42,8 @@ function buildCardCollapsibleHTML(project) {
    return `<div class="project-card-collapsible">
       ${buildCardBodyHTML(project)}
       <div class="project-card-footer">
-         <span class="detail-label">${project.footerLabel}</span>
-         <p>${project.footerText}</p>
+         <span class="detail-label" data-i18n="${project.footerLabelKey}"></span>
+         <p data-i18n="${project.footerTextKey}"></p>
       </div>
    </div>`;
 }
@@ -57,7 +57,7 @@ function buildProjectCardHTML(project) {
             <div class="project-card-content">
                ${buildCardAboutHTML(project)}
                <button class="project-toggle-btn" aria-expanded="false">
-                  Show me more <span class="toggle-arrow">&#9660;</span>
+                  <span data-i18n="project.toggle.more">Show me more</span> <span class="toggle-arrow">&#9660;</span>
                </button>
                ${buildCardCollapsibleHTML(project)}
             </div>
@@ -65,7 +65,7 @@ function buildProjectCardHTML(project) {
          </div>
       </article>
       <button class="project-toggle-btn project-toggle-btn--bottom">
-         Show me less <span class="toggle-arrow">&#9650;</span>
+         <span data-i18n="project.toggle.less">Show me less</span> <span class="toggle-arrow">&#9650;</span>
       </button>
    </div>`;
 }
@@ -73,9 +73,12 @@ function buildProjectCardHTML(project) {
 /** Returns the full HTML for the ongoing project card. */
 function buildOngoingCardHTML(project) {
    return `<article class="project-card project-card--ongoing">
-      ${buildCardHeaderHTML(project)}
-      <p>${project.description}</p>
-      <a href="#contact" class="btn-primary">Let's talk</a>
+      <div class="project-card-header">
+         <span class="project-number">${project.number}</span>
+         <h3 data-i18n="${project.titleKey}"></h3>
+      </div>
+      <p data-i18n="${project.descriptionKey}"></p>
+      <a href="#contact" class="btn-primary" data-i18n="project.cta">Let's talk</a>
    </article>`;
 }
 
@@ -105,7 +108,7 @@ function buildReferenceCardHTML(ref) {
 function buildFactHTML(fact) {
    return `<div class="fact">
       <span class="fact-icon" style="mask-image: url('${fact.icon}'); -webkit-mask-image: url('${fact.icon}');"></span>
-      <span>${fact.text}</span>
+      <span data-i18n="${fact.textKey}"></span>
    </div>`;
 }
 

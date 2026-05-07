@@ -30,7 +30,7 @@ const references = [
    {
       quote: "Yannic ist ein echter Teamplayer, der auch unter Druck strukturiert und fokussiert arbeitet. Bei unserem gemeinsamen Spielprojekt hat er komplexe Anforderungen schnell verstanden und sauber umgesetzt. Sein Code ist klar, gut durchdacht und leicht zu erweitern – genau das, was man sich in einem Team wünscht.",
       authorName: "Jonas Weber",
-      authorRole: "Project Fallen Angeles",
+      authorRole: "Project Join",
    },
    {
       quote: "Die Zusammenarbeit mit Yannic im DA Bubble Projekt war äußerst produktiv. Er hat Eigenverantwortung übernommen, Probleme proaktiv angesprochen und immer konstruktive Lösungen eingebracht. Yannic ist jemand, auf den man sich verlassen kann – fachlich wie menschlich.",
@@ -42,9 +42,9 @@ const references = [
 const aboutFacts = [
    {
       icon: "assets/img/Icons/icon-location.svg",
-      text: "located in Lahr Schwarzwald",
+      textKey: "about.fact.location",
    },
-   { icon: "assets/img/Icons/Icon Remote.svg", text: "open to work remote" },
+   { icon: "assets/img/Icons/Icon Remote.svg", textKey: "about.fact.remote" },
 ];
 
 const skills = [
@@ -65,44 +65,40 @@ const projects = [
    {
       number: 1,
       title: "Project Join",
-      about: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      aboutKey: "project.1.about",
       technologies: "Angular, TypeScript, HTML, CSS, Firebase",
       imgSrc: "assets/img/Join.svg",
       githubUrl: "#",
       liveUrl: "#",
-      footerLabel: "What I have learned",
-      footerText:
-         "Maybe you used a certain technology for the first time? Have you learnt more about how to keep your code clean or how to organise the components in your projects?",
+      footerLabelKey: "project.label.group",
+      footerTextKey: "project.2.footer",
    },
    {
       number: 2,
       title: "Project Fallen Angeles",
-      about: "Jump, run and Slice game based on object-oriented approach. Help the fallen Angeles to find there feathers to become back ther streanght to fight the evile.",
+      aboutKey: "project.2.about",
       technologies: "JavaScript, HTML, CSS",
       imgSrc: "assets/img/Fallen_Angeles.png",
       githubUrl: "#",
       liveUrl: "#",
-      footerLabel: "My group-projects experience",
-      footerText:
-         "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation.",
+      footerLabelKey: "project.label.learned",
+      footerTextKey: "project.1.footer",
    },
    {
       number: 3,
       title: "Project DA Bubble",
-      about: "This App revolutionizes team collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      aboutKey: "project.3.about",
       technologies: "JavaScript, HTML, CSS",
       imgSrc: "assets/img/da-bubble.png",
       githubUrl: "#",
       liveUrl: "#",
-      footerLabel: "My group-projects experience",
-      footerText:
-         "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation.",
+      footerLabelKey: "project.label.group",
+      footerTextKey: "project.3.footer",
    },
    {
       number: 4,
-      title: "Ongoing project",
+      titleKey: "project.4.title",
       ongoing: true,
-      description:
-         "Are you currently working on a project? What is it about and what technologies are you using? Emphasise that good planning and execution are essential to the success of your work and to achieving great results.",
+      descriptionKey: "project.4.description",
    },
 ];
