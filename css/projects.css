@@ -163,11 +163,6 @@
    justify-content: flex-end;
 }
 
-.project-links .btn-primary,
-.project-links .btn-secondary {
-   font-size: 14px;
-   padding: 8px 20px;
-}
 
 .project-card-footer {
    width: 100%;
@@ -221,12 +216,5 @@
 }
 
 .project-card--ongoing .btn-primary {
-   width: 130px;
-   height: 45px;
-   padding: 13px 30px;
-   border-radius: 30px;
-   font-size: 14px;
-   display: flex;
-   justify-content: center;
    align-self: center;
 }

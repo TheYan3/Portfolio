@@ -32,7 +32,6 @@
       width: 100%;
       height: auto;
       padding: 20px;
-      gap: 0;
    }
 
    .project-card-main {
@@ -127,11 +126,13 @@
       padding: 16px 0 24px;
    }
 
-   .project-card-wrapper:has(.project-card.is-expanded) .project-toggle-btn--bottom {
+   .project-card-wrapper:has(.project-card.is-expanded)
+      .project-toggle-btn--bottom {
       display: block;
    }
 
-   .project-card.is-expanded .project-toggle-btn:not(.project-toggle-btn--bottom) {
+   .project-card.is-expanded
+      .project-toggle-btn:not(.project-toggle-btn--bottom) {
       display: none;
    }
 
