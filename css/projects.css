@@ -2,7 +2,7 @@
    justify-content: flex-start;
    width: max-content;
    flex: 0 0 auto;
-   padding-right: 200px;
+   padding-right: 64px;
 }
 
 .work-wrapper {
@@ -10,6 +10,10 @@
    flex-direction: row;
    align-items: center;
    gap: 48px;
+}
+
+.work-wrapper .section-label {
+   align-self: flex-start;
 }
 
 .projects-grid {
@@ -162,7 +166,6 @@
    gap: 12px;
    justify-content: flex-end;
 }
-
 
 .project-card-footer {
    width: 100%;

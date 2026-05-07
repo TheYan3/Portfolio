@@ -11,6 +11,10 @@
    gap: 48px;
 }
 
+.about-content .section-label {
+   align-self: flex-start;
+}
+
 .about-body {
    display: flex;
    flex-direction: column;

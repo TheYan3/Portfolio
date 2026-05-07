@@ -10,6 +10,10 @@
    gap: 48px;
 }
 
+.skills-wrapper .section-label {
+   align-self: flex-end;
+}
+
 .skills-content {
    display: flex;
    flex-direction: column;
