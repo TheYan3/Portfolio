@@ -39,7 +39,7 @@
 }
 
 .arrow-btn {
-   position: absolute;
+   position: relative;
    right: 40px;
    top: 50%;
    transform: translateY(-50%);
@@ -72,17 +72,17 @@
 }
 
 .arrow-btn--hero {
-   top: 20%;
+   top: 40%;
 }
 .arrow-btn--why-me {
-   top: 70%;
+   top: 88%;
 }
 .arrow-btn--skills {
-   top: 50%;
+   top: 43%;
 }
 .arrow-btn--work {
-   top: 80%;
+   top: 88%;
 }
 .arrow-btn--references {
-   top: 30%;
+   top: 50%;
 }
