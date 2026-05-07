@@ -30,8 +30,8 @@
    display: flex;
    flex-direction: column;
    gap: 16px;
-   width: 457px;
-   flex-shrink: 0;
+   flex-shrink: 1;
+   min-width: 280px;
 }
 
 .contact-form input,
@@ -58,13 +58,28 @@
    border-color: var(--color-main);
 }
 
-.contact-form.validated input:invalid,
-.contact-form.validated textarea:invalid {
+.contact-form input.touched:invalid,
+.contact-form textarea.touched:invalid {
    border-color: #e74c3c;
 }
 
-.contact-form.validated input[type="checkbox"]:invalid + label {
+.contact-form input[type="checkbox"].touched:invalid + label {
    color: #e74c3c;
+}
+
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:focus {
+   -webkit-text-fill-color: var(--color-white);
+   -webkit-box-shadow: 0 0 0 1000px transparent inset;
+   transition: background-color 5000s ease-in-out 0s;
+}
+
+.contact-send:disabled {
+   --btn-g-start: #9e9d9d;
+   --btn-g-end: #9e9d9d;
+   cursor: not-allowed;
+   pointer-events: none;
 }
 
 .contact-form input::placeholder,
@@ -116,8 +131,6 @@
 
 .contact-send {
    align-self: flex-end;
-   border-color: var(--color-white);
-   color: var(--color-white);
 }
 
 .contact-info {
@@ -126,6 +139,8 @@
    justify-content: space-between;
    align-items: flex-end;
    flex: 0 0 417px;
+   flex-shrink: 1;
+   min-width: 280px;
    margin-left: auto;
    height: 80vh;
    align-self: flex-start;
@@ -221,4 +236,10 @@
    width: 100px;
    height: 100%;
    background-color: var(--color-main);
+}
+
+@media (min-width: 769px) and (max-width: 1400px) {
+   .contact-body {
+      gap: 24px;
+   }
 }
