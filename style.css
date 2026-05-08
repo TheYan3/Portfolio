@@ -8,6 +8,8 @@
    --color-text-muted: #888888;
    --color-border: #1e2a1e;
    --color-nav-text: #4a4a4a;
+   --color-error: #e74c3c;
+   --color-disabled: #9e9d9d;
 
    --font-main: "Quantico", sans-serif;
 
@@ -74,7 +76,6 @@ img {
    font-weight: 400;
    font-size: 16px;
    line-height: 1.2;
-   letter-spacing: 0;
    padding: 12px 32px;
    border-radius: 50px;
    border: none;
@@ -100,7 +101,6 @@ img {
    font-weight: 400;
    font-size: 16px;
    line-height: 1.2;
-   letter-spacing: 0;
    padding: 12px 32px;
    border-radius: 50px;
    border: 2px solid var(--color-main);
@@ -128,5 +128,5 @@ img {
    font-size: clamp(32px, 5vw, 64px);
    font-weight: 700;
    color: var(--color-main);
-   margin-bottom: 2rem;
+   margin-bottom: 32px;
 }

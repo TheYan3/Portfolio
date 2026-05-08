@@ -64,11 +64,11 @@
 
 .contact-form input.touched:invalid,
 .contact-form textarea.touched:invalid {
-   border-color: #e74c3c;
+   border-color: var(--color-error);
 }
 
 .contact-form input[type="checkbox"].touched:invalid + label {
-   color: #e74c3c;
+   color: var(--color-error);
 }
 
 .contact-form input:-webkit-autofill,
@@ -80,8 +80,8 @@
 }
 
 .contact-send:disabled {
-   --btn-g-start: #9e9d9d;
-   --btn-g-end: #9e9d9d;
+   --btn-g-start: var(--color-disabled);
+   --btn-g-end: var(--color-disabled);
    cursor: not-allowed;
    pointer-events: none;
 }
@@ -137,6 +137,13 @@
    align-self: flex-end;
 }
 
+.form-success-msg {
+   color: var(--color-main);
+   margin-top: 16px;
+   font-weight: 600;
+   font-size: 16px;
+}
+
 .contact-info {
    display: flex;
    flex-direction: column;
@@ -161,7 +168,6 @@
    font-size: 18px;
    font-weight: 400;
    line-height: 1.2;
-   letter-spacing: 0;
    color: var(--color-main);
    text-align: right;
 }
@@ -170,7 +176,6 @@
    font-size: 18px;
    font-weight: 400;
    line-height: 1.2;
-   letter-spacing: 0;
    color: var(--color-white);
    text-align: right;
    max-width: 500px;

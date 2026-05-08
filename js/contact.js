@@ -4,7 +4,7 @@ function showFormSuccess(form) {
    form.querySelectorAll("input, textarea").forEach((f) => f.classList.remove("touched"));
    const msg = document.createElement("p");
    msg.textContent = "Deine Nachricht wurde erfolgreich versendet!";
-   msg.style.cssText = "color:#00e5c3;margin-top:1rem;font-weight:600;";
+   msg.className = "form-success-msg";
    form.appendChild(msg);
    setTimeout(() => msg.remove(), 5000);
 }

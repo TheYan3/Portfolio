@@ -145,7 +145,6 @@
    color: transparent;
    -webkit-text-stroke: 1px var(--color-main);
    line-height: 1.2;
-   letter-spacing: 0;
 }
 
 .hero-location {
