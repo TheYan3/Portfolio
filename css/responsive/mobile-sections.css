@@ -137,6 +137,60 @@
       height: 32px;
    }
 
+   /* ---- Legal ---- */
+   #legal-p2 {
+      padding-bottom: 0;
+   }
+
+   #legal-p1 {
+      padding-top: 100px;
+   }
+
+   #legal-p2 .arrow-btn-back {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: 100%;
+      margin: 28px 0 20px;
+   }
+
+   #legal-p2 .arrow-btn-back .arrow-icon--back {
+      width: 45px;
+      height: 45px;
+      transform: rotate(-90deg);
+   }
+
+   .legal-wrapper {
+      flex-direction: column;
+      padding-right: 0;
+      padding-top: 0;
+      gap: 16px;
+      height: auto;
+   }
+
+   .legal-columns {
+      height: auto;
+      overflow-y: visible;
+   }
+
+   .legal-col {
+      gap: 16px;
+   }
+
+   .legal-block h2 {
+      font-size: 16px;
+   }
+
+   .legal-block p,
+   .legal-block ul li,
+   .legal-meta {
+      font-size: 15px;
+   }
+
+   #legal-p2 .contact-info {
+      width: 100%;
+   }
+
    /* ---- Contact ---- */
    #contact {
       align-items: flex-start;

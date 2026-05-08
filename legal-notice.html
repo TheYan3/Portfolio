@@ -102,11 +102,11 @@
       <main class="scroll-container">
          <section id="legal-p1" class="section">
             <div class="legal-wrapper">
-               <div class="section-label">Legal Notice</div>
+               <div class="section-label" data-i18n="legal.label">Legal Notice</div>
                <div class="legal-columns">
                   <div class="legal-col">
                      <section class="legal-block">
-                        <h2>Information according to § 5 TMG</h2>
+                        <h2 data-i18n="legal.h.tmg">Information according to § 5 TMG</h2>
                         <ul>
                            <li>Yannic Jundt</li>
                            <li>Street and house number</li>
@@ -117,8 +117,8 @@
                         </p>
                      </section>
                      <section class="legal-block">
-                        <h2>Acceptance of terms</h2>
-                        <p>
+                        <h2 data-i18n="legal.h.terms">Acceptance of terms</h2>
+                        <p data-i18n="legal.p.terms">
                            By accessing and using Portfolio (Product), you
                            acknowledge and agree to the following terms and
                            conditions, and any policies, guidelines, or
@@ -129,8 +129,8 @@
                         </p>
                      </section>
                      <section class="legal-block">
-                        <h2>Scope and ownership of the product</h2>
-                        <p>
+                        <h2 data-i18n="legal.h.scope">Scope and ownership of the product</h2>
+                        <p data-i18n="legal.p.scope1">
                            Portfolio has been developed as part of a student
                            group project in a web development bootcamp at the
                            Developer Akademie GmbH. It has an educational
@@ -139,7 +139,7 @@
                            consistent availability, reliability, accuracy, or
                            any other aspect of quality regarding this Product.
                         </p>
-                        <p>
+                        <p data-i18n="legal.p.scope2">
                            The design of Portfolio is owned by the Developer
                            Akademie GmbH. Unauthorized use, reproduction,
                            modification, distribution, or replication of the
@@ -147,8 +147,8 @@
                         </p>
                      </section>
                      <section class="legal-block">
-                        <h2>Proprietary rights</h2>
-                        <p>
+                        <h2 data-i18n="legal.h.proprietary">Proprietary rights</h2>
+                        <p data-i18n="legal.p.proprietary">
                            Aside from the design owned by Developer Akademie
                            GmbH, we, the listed students, retain all proprietary
                            rights in Portfolio, including any associated
@@ -171,8 +171,8 @@
                <div class="legal-columns">
                   <div class="legal-col">
                      <section class="legal-block">
-                        <h2>Use of the product</h2>
-                        <p>
+                        <h2 data-i18n="legal.h.use">Use of the product</h2>
+                        <p data-i18n="legal.p.use">
                            Portfolio is intended to be used for lawful purposes
                            only, in accordance with all applicable laws and
                            regulations. Any use of Portfolio for illegal
@@ -183,10 +183,10 @@
                         </p>
                      </section>
                      <section class="legal-block">
-                        <h2>
+                        <h2 data-i18n="legal.h.disclaimer">
                            Disclaimer of warranties and limitation of liability
                         </h2>
-                        <p>
+                        <p data-i18n="legal.p.disclaimer">
                            Portfolio is provided "as is" without warranty of any
                            kind, whether express or implied, including but not
                            limited to the implied warranties of merchantability,
@@ -198,8 +198,8 @@
                         </p>
                      </section>
                      <section class="legal-block">
-                        <h2>Indemnity</h2>
-                        <p>
+                        <h2 data-i18n="legal.h.indemnity">Indemnity</h2>
+                        <p data-i18n="legal.p.indemnity">
                            You agree to indemnify, defend and hold harmless us,
                            the listed students, the Developer Akademie, and our
                            affiliates, officers, directors, agents, and
@@ -210,8 +210,8 @@
                         </p>
                      </section>
                      <section class="legal-block">
-                        <h2>Disclaimer</h2>
-                        <p>
+                        <h2 data-i18n="legal.h.notice">Disclaimer</h2>
+                        <p data-i18n="legal.p.notice">
                            The contents of this website have been created with
                            the utmost care. However, I cannot guarantee the
                            accuracy, completeness, or timeliness of the content.
@@ -220,13 +220,11 @@
                            general law.
                         </p>
                      </section>
-                     <p class="legal-meta">
+                     <p class="legal-meta" data-i18n-html="legal.meta.contact">
                         For any questions or notices, please contact us at
-                        <a href="mailto:3.j.yannic@gmail.com"
-                           >3.j.yannic@gmail.com</a
-                        >.
+                        <a href="mailto:3.j.yannic@gmail.com">3.j.yannic@gmail.com</a>.
                      </p>
-                     <p class="legal-meta">Date: July 26, 2025</p>
+                     <p class="legal-meta" data-i18n="legal.meta.date">Date: July 26, 2025</p>
                   </div>
                </div>
                <div class="contact-info">
@@ -249,10 +247,60 @@
                         class="arrow-icon arrow-icon--back"
                         aria-hidden="true"></div>
                   </button>
-                  <div class="contact-footer desktop-copy">
-                     <a href="legal-notice.html" data-i18n="footer.legal">Legal notice</a>
-                     <a href="#" data-i18n="footer.privacy">privacy policy</a>
-                     <span>&#169; Yannic Jundt 2025</span>
+                  <div class="contact-footer">
+                     <!-- Mobile: Social Icons -->
+                     <div class="contact-footer-social"></div>
+
+                     <!-- Mobile: Grüner Footer-Block -->
+                     <div class="contact-footer-green">
+                        <a href="index.html#hero" class="contact-footer-logo">
+                           <svg
+                              viewBox="0 0 120 120"
+                              class="logo-ring"
+                              aria-hidden="true">
+                              <path
+                                 id="logo-arc-footer"
+                                 d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"
+                                 fill="none" />
+                              <text font-size="10.5" letter-spacing="1.5">
+                                 <textPath href="#logo-arc-footer">
+                                    frontend developer • frontend developer •
+                                 </textPath>
+                              </text>
+                           </svg>
+                           <span class="logo-initials">YJ</span>
+                        </a>
+                        <span class="contact-footer-copy"
+                           >&#169; Yannic Jundt 2025</span
+                        >
+                        <div class="contact-footer-links">
+                           <a
+                              href="legal-notice.html"
+                              data-i18n="footer.legal"
+                              >Legal notice</a
+                           >
+                           <a href="#" data-i18n="footer.privacy"
+                              >privacy policy</a
+                           >
+                        </div>
+                     </div>
+
+                     <!-- Desktop: Copyright + Links -->
+                     <a
+                        href="legal-notice.html"
+                        class="footer-desktop-link"
+                        data-i18n="footer.legal"
+                        >Legal notice</a
+                     >
+                     <a
+                        href="#"
+                        class="footer-desktop-link"
+                        data-i18n="footer.privacy"
+                        >privacy policy</a
+                     >
+                     <span class="desktop-copy"
+                        >&#169; Yannic Jundt 2025</span
+                     >
                   </div>
                </div>
             </div>
@@ -260,9 +308,12 @@
          </section>
       </main>
 
+      <script src="js/datenbank.js"></script>
       <script src="js/translations.js"></script>
+      <script src="js/template.js"></script>
       <script src="js/navigation.js"></script>
       <script src="js/burger-menu.js"></script>
       <script src="js/translator.js"></script>
+      <script src="js/legal.js"></script>
    </body>
 </html>
