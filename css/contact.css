@@ -22,7 +22,7 @@
    flex-direction: row;
    align-items: flex-start;
    flex: 1;
-   gap: 64px;
+   gap: 96px;
 }
 
 #contact .section-label {

@@ -138,15 +138,18 @@
    }
 
    /* ---- Legal ---- */
-   #legal-p2 {
+   #legal-p2,
+   #privacy-p2 {
       padding-bottom: 0;
    }
 
-   #legal-p1 {
+   #legal-p1,
+   #privacy-p1 {
       padding-top: 100px;
    }
 
-   #legal-p2 .arrow-btn-back {
+   #legal-p2 .arrow-btn-back,
+   #privacy-p2 .arrow-btn-back {
       display: flex;
       justify-content: center;
       align-self: center;
@@ -154,7 +157,8 @@
       margin: 28px 0 20px;
    }
 
-   #legal-p2 .arrow-btn-back .arrow-icon--back {
+   #legal-p2 .arrow-btn-back .arrow-icon--back,
+   #privacy-p2 .arrow-btn-back .arrow-icon--back {
       width: 45px;
       height: 45px;
       transform: rotate(-90deg);
@@ -187,7 +191,8 @@
       font-size: 15px;
    }
 
-   #legal-p2 .contact-info {
+   #legal-p2 .contact-info,
+   #privacy-p2 .contact-info {
       width: 100%;
    }
 

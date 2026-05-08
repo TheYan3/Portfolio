@@ -34,12 +34,20 @@
       padding: 20px;
    }
 
-   .project-card-main {
+   .project-card-upper {
       flex-direction: column;
    }
 
    .project-card-content {
       width: 100%;
+   }
+
+   .project-card-lower {
+      display: none;
+   }
+
+   .project-card.is-expanded .project-card-lower {
+      display: block;
    }
 
    .project-card-header {

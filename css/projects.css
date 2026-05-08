@@ -19,26 +19,28 @@
 .projects-grid {
    display: flex;
    flex-direction: row;
-   gap: 10px;
+   gap: 40px;
 }
 
 .project-card {
    width: 919px;
-   height: 600px;
    flex-shrink: 0;
    background-color: color-mix(in srgb, var(--color-main) 50%, transparent);
    border-radius: 30px;
    padding: 24px;
    display: flex;
    flex-direction: column;
-   gap: 16px;
+   height: 560px;
 }
 
-.project-card-main {
+.project-card-upper {
    display: flex;
    flex-direction: row;
    gap: 24px;
-   flex: 1;
+}
+
+.project-card-lower {
+   width: 100%;
 }
 
 .project-card-content {
@@ -151,7 +153,7 @@
    align-items: center;
    gap: 12px;
    flex-shrink: 0;
-   width: 337px;
+   width: 300px;
    align-self: flex-start;
 }
 

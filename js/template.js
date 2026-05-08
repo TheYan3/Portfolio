@@ -37,10 +37,16 @@ function buildCardBodyHTML(project) {
    </div>`;
 }
 
-/** Returns the collapsible section HTML of a project card. */
+/** Returns the collapsible technologies section HTML of a project card. */
 function buildCardCollapsibleHTML(project) {
    return `<div class="project-card-collapsible">
       ${buildCardBodyHTML(project)}
+   </div>`;
+}
+
+/** Returns the lower footer section HTML of a project card. */
+function buildCardLowerHTML(project) {
+   return `<div class="project-card-lower">
       <div class="project-card-footer">
          <span class="detail-label" data-i18n="${project.footerLabelKey}"></span>
          <p data-i18n="${project.footerTextKey}"></p>
@@ -53,7 +59,7 @@ function buildProjectCardHTML(project) {
    return `<div class="project-card-wrapper">
       <article class="project-card">
          ${buildCardHeaderHTML(project)}
-         <div class="project-card-main">
+         <div class="project-card-upper">
             <div class="project-card-content">
                ${buildCardAboutHTML(project)}
                <button class="project-toggle-btn" aria-expanded="false">
@@ -63,6 +69,7 @@ function buildProjectCardHTML(project) {
             </div>
             ${buildCardMediaHTML(project)}
          </div>
+         ${buildCardLowerHTML(project)}
       </article>
       <button class="project-toggle-btn project-toggle-btn--bottom">
          <span data-i18n="project.toggle.less">Show me less</span> <span class="toggle-arrow">&#9650;</span>

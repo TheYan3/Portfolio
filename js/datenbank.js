@@ -1,7 +1,7 @@
 const socialLinks = [
    {
       label: "Email",
-      href: "mailto:3.j.yannic@gmail.com",
+      href: "mailto:yannic-jundt@gmx.de",
       viewBox: "0 0 16 16",
       path: "M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z",
    },
@@ -68,7 +68,7 @@ const projects = [
       aboutKey: "project.1.about",
       technologies: "Angular, TypeScript, HTML, CSS, Firebase",
       imgSrc: "assets/img/Join.svg",
-      githubUrl: "#",
+      githubUrl: "https://github.com/TheYan3/Join",
       liveUrl: "#",
       footerLabelKey: "project.label.group",
       footerTextKey: "project.2.footer",
@@ -79,8 +79,8 @@ const projects = [
       aboutKey: "project.2.about",
       technologies: "JavaScript, HTML, CSS",
       imgSrc: "assets/img/Fallen_Angeles.png",
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/TheYan3/Fallen-Angles",
+      liveUrl: "fallenangeles.yannicjundt.de",
       footerLabelKey: "project.label.learned",
       footerTextKey: "project.1.footer",
    },
