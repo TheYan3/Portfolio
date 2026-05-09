@@ -1,0 +1,160 @@
+/* =========================================================
+   HEIGHT COMPACT  –  max-height: 865px
+   Landscape phones and short-viewport desktops/tablets.
+   ========================================================= */
+
+/* ---- Desktop / Tablet landscape (>768px wide, ≤865px tall) ---- */
+@media (min-width: 769px) and (max-height: 920px) {
+   .section {
+      padding: 36px 80px 36px 10px;
+   }
+
+   .nav-logo {
+      width: 72px;
+      height: 72px;
+   }
+
+   .logo-initials {
+      font-size: 16px;
+   }
+
+   .nav-links {
+      gap: 14px;
+   }
+
+   .nav-links a {
+      font-size: 18px;
+   }
+
+   .section-label {
+      font-size: 36px;
+      -webkit-text-stroke: 2px var(--color-main);
+   }
+
+   .arrow-icon {
+      width: 80px;
+   }
+
+   /* Re-position arrows so they stay inside the visible content area */
+   .arrow-btn--hero {
+      top: 78%;
+   }
+   .arrow-btn--why-me {
+      top: 86%;
+   }
+   .arrow-btn--skills {
+      top: 78%;
+   }
+   .arrow-btn--work {
+      top: 86%;
+   }
+   .arrow-btn--references {
+      top: 80%;
+   }
+
+   /* Hero */
+   .hero-name {
+      font-size: 56px;
+   }
+
+   .hero-image {
+      width: 600px;
+   }
+
+   /* Skills */
+   .skills-grid {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+   }
+
+   .skill-icon,
+   .skill-item img {
+      width: 44px;
+      height: 44px;
+   }
+
+   .skill-item {
+      font-size: 13px;
+   }
+
+   .skills-description {
+      font-size: 14px;
+   }
+
+   /* Contact */
+   .contact-info {
+      height: 72vh;
+   }
+
+   .contact-tagline,
+   .contact-description {
+      font-size: 15px;
+   }
+
+   .contact-form textarea {
+      height: 100px;
+   }
+
+   /* Legal / Privacy */
+   .legal-wrapper {
+      padding-top: 36px;
+   }
+}
+
+/* ---- Mobile landscape (≤768px wide, ≤865px tall) ---- */
+@media (max-width: 768px) and (max-height: 865px) {
+   /* Hero image: prevent it from eating the full screen in landscape */
+   .hero-image img {
+      max-height: 260px;
+      object-position: top center;
+   }
+
+   .hero-text {
+      padding: 12px 20px 20px;
+   }
+
+   .hero-name {
+      font-size: 32px;
+   }
+
+   .hero-title {
+      font-size: 20px;
+   }
+
+   .hero-location {
+      font-size: 15px;
+   }
+
+   /* Mobile menu: shorter so it doesn't overflow on landscape */
+   .mobile-menu-overlay {
+      height: 260px;
+      overflow-y: auto;
+   }
+
+   /* Skills tighter */
+   .skills-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+   }
+
+   .skill-icon,
+   .skill-item img {
+      width: 40px;
+      height: 40px;
+   }
+
+   .skill-item {
+      font-size: 13px;
+   }
+
+   /* Contact form textarea shorter */
+   .contact-form textarea {
+      height: 80px;
+   }
+
+   /* Legal / Privacy: less top offset needed (nav is 60px) */
+   #legal-p1,
+   #privacy-p1 {
+      padding-top: 70px;
+   }
+}
