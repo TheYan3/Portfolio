@@ -80,7 +80,7 @@ const projects = [
       technologies: "JavaScript, HTML, CSS",
       imgSrc: "assets/img/Fallen_Angeles.png",
       githubUrl: "https://github.com/TheYan3/Fallen-Angles",
-      liveUrl: "fallenangeles.yannicjundt.de",
+      liveUrl: "https://fallenangeles.yannicjundt.de",
       footerLabelKey: "project.label.learned",
       footerTextKey: "project.1.footer",
    },
