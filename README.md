@@ -1,18 +1,26 @@
 # Yannic Jundt | Frontend Developer Portfolio
 
-![Portfolio preview](assets/img/Yannic_Portfolio_main_Page.PNG)
+![Portfolio preview](assets/img/Yannic2_Portfolio_main_Page.png)
 
-This is my personal developer portfolio, built to present who I am, what I am currently learning, and the projects I have worked on so far.
+Personal developer portfolio presenting my skills, background, and the projects I have built. Designed to reflect my approach to frontend development: clean structure, precise implementation, and a strong focus on detail.
 
-I am a frontend developer from Germany with a strong interest in clean interfaces, structured code, and practical problem solving. My current focus is frontend development with HTML, CSS, JavaScript and modern web workflows, while continuously growing towards fullstack development and the technologies that will shape future web applications.
+**Live:** [yannicjundt.de](https://yannicjundt.de)
 
-## Live Portfolio
+---
 
-Visit the portfolio here: [yannicjundt.de](https://yannicjundt.de)
+## About me
+
+I am a frontend developer based in Lahr, Germany. My focus is on translating designs into high-quality, maintainable code. I work in a structured and detail-oriented way and actively look for solutions beyond my current tech stack. My goal is to grow into a fullstack developer and build end-to-end applications.
+
+- Location: Lahr, Baden-Württemberg
+- Open to: Permanent positions and freelance work
+- Languages: German (native), English (professional)
+
+---
 
 ## Tech Stack
 
-The portfolio itself is built with:
+**Portfolio built with:**
 
 <p>
   <img src="assets/img/Icons/html.svg" alt="HTML" width="37" />
@@ -20,51 +28,55 @@ The portfolio itself is built with:
   <img src="assets/img/Icons/Javascript.svg" alt="JavaScript" width="42" />
 </p>
 
--  HTML
--  CSS
--  JavaScript
--  PHPMailer for the contact form
+`HTML` `CSS` `JavaScript` `PHP` `PHPMailer`
+
+**Skills I work with:**
+
+`Angular` `TypeScript` `JavaScript` `HTML` `CSS` `REST API` `Firebase` `Supabase` `Git` `Scrum`
+
+---
 
 ## Features
 
--  Responsive portfolio website
--  Horizontal section-based navigation
--  Smooth scrolling between sections
--  Project showcase with live/demo and GitHub link areas
--  Skills overview with custom icons
--  Contact form connected through a PHP mail setup
--  Legal notice page
+- Horizontal scroll desktop layout with smooth section navigation
+- Full DE/EN translation (language toggle in header and mobile menu)
+- Responsive across all devices from 320px to 2040px — including landscape/short viewports
+- Project cards with expand/collapse on mobile
+- Contact form with onBlur validation, submit gating, and PHPMailer/SMTP delivery
+- Legal notice and privacy policy pages
+- Custom YJ favicon (SVG)
+
+---
 
 ## Projects
 
-### Join
+### Project Join — [Live](https://join.yannicjundt.de) · [GitHub](https://github.com/TheYan3/Join)
 
-A task manager inspired by the Kanban system. The project focuses on organizing tasks, working with drag and drop interactions, and building a structured application experience.
+Task manager inspired by the Kanban system. Create and organize tasks with drag-and-drop, assign users and categories.
 
-Technologies used: Angular, TypeScript, HTML, CSS, Firebase
+`Angular` `TypeScript` `HTML` `CSS` `Firebase`
 
-### Fallen Angeles
+---
 
-A jump-and-run game based on an object-oriented JavaScript structure. The project helped me practice game logic, class-based code organization, animation, and browser-based interaction.
+### Project Fallen Angeles — [Live](https://fallenangeles.yannicjundt.de) · [GitHub](https://github.com/TheYan3/Fallen-Angles)
 
-Technologies used: JavaScript, HTML, CSS
+Jump, run and slice game built with an object-oriented JavaScript approach. Includes game logic, class-based architecture, collision detection, and canvas animation.
 
-### DA Bubble
+`JavaScript` `HTML` `CSS`
 
-A collaboration and messaging app concept focused on team communication, real-time interaction, and a structured user interface for productive workflows.
+---
 
-Technologies used: JavaScript, HTML, CSS
+### Project DA Bubble
 
-### Ongoing Work
+Collaboration and real-time messaging app focused on team communication, channel organization, and a structured user interface.
 
-My portfolio also includes an area for ongoing projects, because I want the website to reflect my current learning path and not only finished work. I am especially interested in improving my understanding of fullstack development, backend workflows, APIs, databases, and scalable application structure.
+`JavaScript` `HTML` `CSS`
 
-## Repository
-
-GitHub repository: [TheYan3/Portfolio](https://github.com/TheYan3/Portfolio)
+---
 
 ## Contact
 
--  Email: [Mail](mailto:yannic-jundt@gmx.de)
--  GitHub: [github](https://github.com/TheYan3)
--  LinkedIn: [LinkedIn](https://linkedin.com)
+- Email: [yannic-jundt@gmx.de](mailto:yannic-jundt@gmx.de)
+- GitHub: [github.com/TheYan3](https://github.com/TheYan3)
+- LinkedIn: [linkedin.com](https://linkedin.com)
+- Portfolio: [yannicjundt.de](https://yannicjundt.de)

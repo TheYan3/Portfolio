@@ -69,7 +69,7 @@ const projects = [
       technologies: "Angular, TypeScript, HTML, CSS, Firebase",
       imgSrc: "assets/img/Join.svg",
       githubUrl: "https://github.com/TheYan3/Join",
-      liveUrl: "#",
+      liveUrl: "https://join.yannicjundt.de",
       footerLabelKey: "project.label.group",
       footerTextKey: "project.2.footer",
    },
