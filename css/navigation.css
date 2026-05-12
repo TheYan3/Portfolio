@@ -61,6 +61,5 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-   color: transparent;
-   -webkit-text-stroke: 1.2px var(--color-nav-text);
+   color: var(--color-white);
 }
