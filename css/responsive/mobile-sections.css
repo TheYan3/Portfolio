@@ -113,9 +113,6 @@
       padding-right: 0;
    }
 
-   .skills-description {
-      font-size: 15px;
-   }
 
    .skills-grid {
       grid-template-columns: repeat(3, 1fr);

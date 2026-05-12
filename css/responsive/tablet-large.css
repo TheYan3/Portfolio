@@ -42,11 +42,7 @@
       gap: 24px;
    }
 
-   .skills-description {
-      font-size: 16px;
-   }
-
-   .contact-form {
+.contact-form {
       width: 380px;
    }
 }
