@@ -19,8 +19,8 @@ function buildCardMediaHTML(project) {
    return `<div class="project-card-media">
       <img src="${project.imgSrc}" alt="${project.title}" />
       <div class="project-links">
-         <a href="${project.githubUrl}" class="btn-secondary">GitHub</a>
-         <a href="${project.liveUrl}" class="btn-primary">Live Test</a>
+         <a href="${project.githubUrl}" class="btn-secondary" target="_blank">GitHub</a>
+         <a href="${project.liveUrl}" class="btn-primary" target="_blank">Live Test</a>
       </div>
    </div>`;
 }
@@ -138,9 +138,11 @@ function buildSkillItemHTML(skill) {
 /** Renders social links into every .social-links and .contact-footer-social container. */
 function renderSocialLinks() {
    const html = socialLinks.map(buildSocialLinkHTML).join("");
-   document.querySelectorAll(".social-links, .contact-footer-social").forEach((el) => {
-      el.innerHTML = html;
-   });
+   document
+      .querySelectorAll(".social-links, .contact-footer-social")
+      .forEach((el) => {
+         el.innerHTML = html;
+      });
 }
 
 /** Renders all reference cards into the carousel track. */
@@ -169,6 +171,8 @@ function renderProjects() {
    const grid = document.querySelector(".projects-grid");
    if (!grid) return;
    grid.innerHTML = projects
-      .map((p) => (p.ongoing ? buildOngoingCardHTML(p) : buildProjectCardHTML(p)))
+      .map((p) =>
+         p.ongoing ? buildOngoingCardHTML(p) : buildProjectCardHTML(p),
+      )
       .join("");
 }
