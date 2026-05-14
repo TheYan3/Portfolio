@@ -38,6 +38,11 @@
    flex-shrink: 0;
 }
 
+@keyframes arrow-pulse {
+   0%, 70%, 100% { scale: 1; filter: none; }
+   85% { scale: 1.18; filter: drop-shadow(0 0 10px var(--color-main)); }
+}
+
 .arrow-btn {
    position: absolute;
    right: 48px;
@@ -50,6 +55,7 @@
    display: flex;
    align-items: center;
    transition: transform 0.2s;
+   animation: arrow-pulse 3.5s ease-in-out infinite;
 }
 
 .arrow-container {
@@ -75,6 +81,7 @@
 .arrow-btn:hover {
    transform: translateY(-50%) translateX(12px);
    filter: drop-shadow(0 0 8px var(--color-main));
+   animation: none;
 }
 
 .arrow-btn--hero {
