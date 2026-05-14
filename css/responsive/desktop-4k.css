@@ -1,0 +1,293 @@
+@media (min-width: 2560px) {
+   :root {
+      --nav-width: 240px;
+   }
+
+   /* Navigation */
+   .nav-logo {
+      width: 168px;
+      height: 168px;
+   }
+
+   .logo-initials {
+      font-size: 36px;
+   }
+
+   .nav-links {
+      gap: 56px;
+   }
+
+   .nav-links a {
+      font-size: 42px;
+   }
+
+   /* Layout */
+   .section {
+      padding: 140px 140px 140px 10px;
+   }
+
+   .section-label {
+      font-size: 76px;
+      -webkit-text-stroke: 4px var(--color-main);
+   }
+
+   .arrow-icon {
+      width: 156px;
+   }
+
+   .arrow-btn--hero {
+      top: 392px;
+   }
+   .arrow-btn--why-me {
+      top: calc(100% - 140px);
+   }
+   .arrow-btn--skills {
+      top: calc(50% - 128px);
+   }
+   .arrow-btn--work {
+      top: calc(100% - 140px);
+   }
+   .arrow-btn--references {
+      top: 540px;
+   }
+
+   /* Buttons */
+   .btn-primary,
+   .btn-secondary {
+      font-size: 22px;
+      padding: 16px 44px;
+   }
+
+   .btn-secondary {
+      border-width: 3px;
+   }
+
+   /* Hero */
+   .hero-image {
+      width: 1200px;
+      height: 100%;
+   }
+
+   .hero-name {
+      font-size: 140px;
+   }
+
+   .hero-title {
+      font-size: 68px;
+   }
+
+   .hero-text {
+      padding-bottom: 210px;
+   }
+
+   .hero-header {
+      height: 86px;
+      padding: 0 200px 0 60px;
+   }
+
+   .socialContainer {
+      width: 42px;
+      height: 42px;
+   }
+
+   .socialSvg {
+      width: 24px;
+   }
+
+   .lang-toggle {
+      font-size: 24px;
+   }
+
+   /* Why Me */
+   .about-body {
+      max-width: 1480px;
+   }
+
+   .about-description {
+      font-size: 24px;
+   }
+
+   .about-content h3 {
+      font-size: 80px;
+   }
+
+   .about-content {
+      gap: 68px;
+   }
+
+   .fact {
+      font-size: 24px;
+   }
+
+   .fact-icon {
+      width: 56px;
+      height: 56px;
+   }
+
+   /* Skills */
+   .skills-wrapper {
+      gap: 68px;
+   }
+
+   .skills-content {
+      padding-right: 84px;
+      gap: 56px;
+   }
+
+   .skills-description {
+      font-size: 24px;
+   }
+
+   .skills-grid {
+      gap: 48px;
+   }
+
+   .skill-item img,
+   .skill-icon {
+      width: 84px;
+      height: 84px;
+   }
+
+   .skill-item {
+      font-size: 24px;
+   }
+
+   /* My Work */
+   .project-card {
+      width: 1300px;
+      height: 792px;
+   }
+
+   .projects-grid {
+      gap: 56px;
+   }
+
+   .project-number {
+      font-size: 140px;
+   }
+
+   .project-card h3 {
+      font-size: 76px;
+   }
+
+   .detail-label {
+      font-size: 34px;
+   }
+
+   .project-details p,
+   .project-about p,
+   .project-card-footer p {
+      font-size: 24px;
+   }
+
+   .project-card-media {
+      width: 420px;
+   }
+
+   #my-work {
+      padding-right: 90px;
+   }
+
+   .project-card--ongoing {
+      width: 490px;
+      height: 408px;
+   }
+
+   .project-card--ongoing .project-number {
+      font-size: 68px;
+   }
+
+   .project-card--ongoing h3 {
+      font-size: 42px;
+   }
+
+   .project-card--ongoing p {
+      font-size: 21px;
+   }
+
+   /* References */
+   .references-wrapper {
+      gap: 68px;
+   }
+
+   .reference-card {
+      width: 900px;
+   }
+
+   .reference-card blockquote {
+      font-size: 21px;
+   }
+
+   .author-name {
+      font-size: 27px;
+   }
+
+   .author-role {
+      font-size: 20px;
+   }
+
+   .reference-author {
+      min-width: 196px;
+   }
+
+   #references {
+      padding-right: 280px;
+   }
+
+   /* Contact */
+   .contact-wrapper {
+      gap: 56px;
+   }
+
+   .contact-form {
+      width: 640px;
+   }
+
+   .contact-form textarea {
+      height: 220px;
+   }
+
+   .contact-form input,
+   .contact-form textarea {
+      font-size: 22px;
+      padding: 16px 28px;
+   }
+
+   .contact-body {
+      gap: 134px;
+   }
+
+   .contact-info {
+      flex: 0 0 580px;
+   }
+
+   .contact-tagline,
+   .contact-description {
+      font-size: 24px;
+   }
+
+   .contact-detail-link {
+      font-size: 24px;
+   }
+
+   .contact-footer {
+      font-size: 22px;
+   }
+
+   #contact {
+      padding-right: 280px;
+   }
+
+   .contact-sidebar {
+      width: 140px;
+   }
+
+   /* Legal */
+   .legal-wrapper {
+      padding-top: 140px;
+   }
+
+   .section-headline {
+      font-size: 96px;
+   }
+}

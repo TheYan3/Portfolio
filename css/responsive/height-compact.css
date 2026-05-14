@@ -22,10 +22,6 @@
       gap: 14px;
    }
 
-   .nav-links a {
-      font-size: 18px;
-   }
-
    .section-label {
       font-size: 36px;
       -webkit-text-stroke: 2px var(--color-main);
@@ -37,19 +33,19 @@
 
    /* Re-position arrows so they stay inside the visible content area */
    .arrow-btn--hero {
-      top: 78%;
+      top: 275px;
    }
    .arrow-btn--why-me {
-      top: 86%;
+      top: calc(100% - 36px);
    }
    .arrow-btn--skills {
-      top: 78%;
+      top: calc(50% - 153px);
    }
    .arrow-btn--work {
-      top: 86%;
+      top: calc(100% - 36px);
    }
    .arrow-btn--references {
-      top: 80%;
+      top: 261px;
    }
 
    /* Hero */

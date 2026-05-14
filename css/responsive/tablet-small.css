@@ -25,19 +25,19 @@
    }
 
    .arrow-btn--hero {
-      top: 22%;
+      top: 275px;
    }
    .arrow-btn--why-me {
-      top: 94%;
+      top: calc(100% - 80px);
    }
    .arrow-btn--skills {
-      top: 38%;
+      top: calc(50% - 153px);
    }
    .arrow-btn--work {
-      top: 94%;
+      top: calc(100% - 80px);
    }
    .arrow-btn--references {
-      top: 25%;
+      top: 305px;
    }
 
    .section {

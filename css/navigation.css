@@ -59,7 +59,12 @@
    transition: color 0.2s, -webkit-text-stroke 0.2s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
    color: var(--color-white);
+   -webkit-text-stroke: 0px;
+}
+
+.nav-links a.active {
+   color: transparent;
+   -webkit-text-stroke: 1px var(--color-white);
 }
