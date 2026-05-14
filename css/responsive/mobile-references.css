@@ -17,8 +17,8 @@
 }
 
 .carousel-track {
-   display: flex;
-   flex-direction: column;
+   display: grid;
+   grid-template-columns: 1fr;
    gap: 16px;
 }
 
@@ -51,6 +51,7 @@
    .references-content {
       width: 100%;
       gap: 8px;
+      padding-right: 0;
    }
 
    .references-mobile-headline {
@@ -70,27 +71,29 @@
    }
 
    .carousel-viewport {
-      overflow: hidden;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
       width: 100%;
+   }
+
+   .carousel-viewport::-webkit-scrollbar {
+      display: none;
    }
 
    .carousel-track {
       display: flex;
       flex-direction: row;
       gap: 0;
-      transition: transform 0.35s ease;
-      will-change: transform;
    }
 
-   /* display:flex explizit, damit flex-direction: column greift */
    .reference-card {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 16px;
-      flex-shrink: 0;
-      width: 100%;
-      max-width: none;
+      flex: 0 0 100%;
+      scroll-snap-align: start;
       padding: 20px;
       box-sizing: border-box;
    }
@@ -133,7 +136,8 @@
       border: 2px solid var(--color-main);
       cursor: pointer;
       padding: 0;
-      transition: width 0.25s ease, border-radius 0.25s ease, background-color 0.25s ease;
+      transition: width 0.25s ease, border-radius 0.25s ease,
+         background-color 0.25s ease;
       flex-shrink: 0;
    }
 

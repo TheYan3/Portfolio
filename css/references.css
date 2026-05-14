@@ -1,9 +1,6 @@
 #references {
    justify-content: flex-start;
    align-items: flex-end;
-   width: calc(100vw - var(--nav-width));
-   flex: 0 0 auto;
-   padding-right: 200px;
 }
 
 .references-wrapper {
@@ -21,6 +18,7 @@
    display: flex;
    flex-direction: column;
    gap: 16px;
+   padding-right: 200px;
 }
 
 .reference-card {
@@ -31,7 +29,6 @@
    flex-direction: row;
    align-items: center;
    gap: 28px;
-   width: 578px;
 }
 
 .reference-card blockquote {

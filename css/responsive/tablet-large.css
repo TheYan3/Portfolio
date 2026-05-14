@@ -42,7 +42,23 @@
       gap: 24px;
    }
 
-.contact-form {
+   .contact-form {
       width: 380px;
+   }
+
+   .about-body {
+      padding-right: 100px;
+   }
+
+   .skills-content {
+      padding-right: 100px;
+   }
+
+   .projects-grid {
+      padding-right: 100px;
+   }
+
+   .references-content {
+      padding-right: 100px;
    }
 }

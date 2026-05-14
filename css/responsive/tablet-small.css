@@ -89,4 +89,20 @@
    .contact-body {
       gap: 40px;
    }
+
+   .about-body {
+      padding-right: 100px;
+   }
+
+   .skills-content {
+      padding-right: 100px;
+   }
+
+   .projects-grid {
+      padding-right: 100px;
+   }
+
+   .references-content {
+      padding-right: 100px;
+   }
 }

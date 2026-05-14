@@ -101,6 +101,7 @@
    /* Why Me */
    .about-body {
       max-width: 1480px;
+      padding-right: 240px;
    }
 
    .about-description {
@@ -130,7 +131,7 @@
    }
 
    .skills-content {
-      padding-right: 84px;
+      padding-right: 240px;
       gap: 56px;
    }
 
@@ -160,6 +161,7 @@
 
    .projects-grid {
       gap: 56px;
+      padding-right: 240px;
    }
 
    .project-number {
@@ -210,10 +212,6 @@
       gap: 68px;
    }
 
-   .reference-card {
-      width: 900px;
-   }
-
    .reference-card blockquote {
       font-size: 21px;
    }
@@ -230,7 +228,7 @@
       min-width: 196px;
    }
 
-   #references {
+   .references-content {
       padding-right: 280px;
    }
 
