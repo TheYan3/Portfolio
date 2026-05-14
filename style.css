@@ -34,6 +34,12 @@ html {
 body {
    font-family: var(--font-main);
    background-color: var(--color-bg);
+   background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 1) 15%,
+      rgba(24, 33, 32) 47%,
+      rgba(0, 0, 0, 1) 87%
+   );
    color: var(--color-white);
    display: flex;
    overflow: hidden;
