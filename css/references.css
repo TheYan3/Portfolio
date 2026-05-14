@@ -1,8 +1,7 @@
 #references {
    justify-content: flex-start;
    align-items: flex-end;
-   width: max-content;
-   min-width: calc(100vw - var(--nav-width));
+   width: calc(100vw - var(--nav-width));
    flex: 0 0 auto;
    padding-right: 200px;
 }

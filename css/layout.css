@@ -40,7 +40,7 @@
 
 .arrow-btn {
    position: absolute;
-   right: 24px;
+   right: 48px;
    top: 50%;
    transform: translateY(-50%);
    background: none;
@@ -73,7 +73,7 @@
 }
 
 .arrow-btn:hover {
-   transform: translateY(-50%) translateX(8px);
+   transform: translateY(-50%) translateX(12px);
    filter: drop-shadow(0 0 8px var(--color-main));
 }
 
@@ -81,13 +81,13 @@
    top: 328px;
 }
 .arrow-btn--why-me {
-   top: calc(100% - 100px);
+   top: calc(100% - 148px);
 }
 .arrow-btn--skills {
    top: calc(50% - 90px);
 }
 .arrow-btn--work {
-   top: calc(100% - 100px);
+   top: calc(100% - 148px);
 }
 .arrow-btn--references {
    top: 404px;

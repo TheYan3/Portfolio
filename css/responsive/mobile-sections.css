@@ -75,6 +75,7 @@
 
    .about-content {
       flex-direction: column;
+      align-items: flex-start;
       gap: 20px;
       width: 100%;
    }
@@ -92,6 +93,10 @@
       font-size: 32px;
    }
 
+   .about-facts {
+      padding-bottom: 45px;
+   }
+
    .about-cta {
       align-self: center;
    }
@@ -103,8 +108,15 @@
 
    .skills-wrapper {
       flex-direction: column;
+      align-items: flex-start;
       gap: 20px;
       width: 100%;
+   }
+
+   /* Override desktop-specific align-self rules for section labels */
+   .skills-wrapper .section-label,
+   .references-wrapper .section-label {
+      align-self: flex-start;
    }
 
    .skills-content {
@@ -217,6 +229,29 @@
       width: 100%;
    }
 
+   /* Figma mobile order: tagline+info first, form second, footer last.
+      display:contents dissolves the .contact-info box so its children
+      become direct flex-children of .contact-body and can be ordered. */
+   #contact .contact-info {
+      display: contents;
+   }
+
+   #contact .contact-info-top {
+      order: -1;
+   }
+
+   #contact .contact-form {
+      order: 0;
+   }
+
+   #contact .arrow-btn-back {
+      order: 1;
+   }
+
+   #contact .contact-footer {
+      order: 2;
+   }
+
    .contact-form {
       width: 100%;
    }
@@ -240,6 +275,7 @@
 
    .contact-info-top {
       align-items: flex-start;
+      width: 100%;
    }
 
    .contact-tagline,
