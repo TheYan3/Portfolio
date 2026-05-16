@@ -32,11 +32,11 @@ const references = [
       authorName: "Jonas Weber",
       authorRole: "Project Join",
    },
-   {
-      quoteKey: "reference.3.quote",
-      authorName: "Laura Hoffmann",
-      authorRole: "Project DA Bubble",
-   },
+   //{
+   // quoteKey: "reference.3.quote",
+   //authorName: "Laura Hoffmann",
+   //authorRole: "Project DA Bubble",
+   //},
 ];
 
 const aboutFacts = [

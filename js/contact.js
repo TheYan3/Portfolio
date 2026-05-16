@@ -21,25 +21,24 @@ function appendFormMsg(form, key, cssClass) {
 function showFormSuccess(form) {
    form.reset();
    form.querySelectorAll("input, textarea").forEach((f) => f.classList.remove("touched"));
-   form.querySelectorAll(".field-error").forEach((e) => e.remove());
+   form.querySelectorAll(".field-error").forEach((e) => (e.textContent = ""));
    appendFormMsg(form, "contact.success", "form-success-msg");
 }
 
-/** Shows or updates an inline error message directly after the field. */
+/** Shows an inline error message in the static span directly after the field. */
 function showFieldError(field, key) {
-   let err = field.nextElementSibling;
-   if (!err?.classList.contains("field-error")) {
-      err = document.createElement("span");
-      err.className = "field-error";
-      field.after(err);
+   const err = field.nextElementSibling;
+   if (err?.classList.contains("field-error")) {
+      err.textContent = getMsg(key);
    }
-   err.textContent = getMsg(key);
 }
 
-/** Removes the inline error message after the field if present. */
+/** Clears the inline error message in the static span directly after the field. */
 function clearFieldError(field) {
-   const next = field.nextElementSibling;
-   if (next?.classList.contains("field-error")) next.remove();
+   const err = field.nextElementSibling;
+   if (err?.classList.contains("field-error")) {
+      err.textContent = "";
+   }
 }
 
 /** Sets customValidity on the email field when TLD is missing. */
@@ -64,15 +63,12 @@ function validateField(field) {
    key ? showFieldError(field, key) : clearFieldError(field);
 }
 
-/** Enables or disables the submit button based on current form validity. */
-function updateSubmitButton(form) {
-   const btn = form.querySelector('[type="submit"]');
-   if (btn) btn.disabled = !form.checkValidity();
-}
-
-/** Marks all fields as touched to trigger validation styling. */
-function markAllTouched(form) {
-   form.querySelectorAll("input, textarea").forEach((f) => f.classList.add("touched"));
+/** Shows or clears the privacy error message. */
+function validatePrivacy(form) {
+   const checkbox = form.querySelector("#privacy-check");
+   const err = form.querySelector(".privacy-error");
+   if (!err) return;
+   err.textContent = checkbox?.checked ? "" : getMsg("contact.error.privacy.required");
 }
 
 /** POSTs form data and shows inline success or error message. */
@@ -88,7 +84,7 @@ function submitContactForm(form, btn) {
          else appendFormMsg(form, "contact.error.server", "form-error-msg");
       })
       .catch(() => appendFormMsg(form, "contact.error.network", "form-error-msg"))
-      .finally(() => { if (btn) btn.disabled = !form.checkValidity(); });
+      .finally(() => { if (btn) btn.disabled = false; });
 }
 
 /** Adds blur and input listeners to show per-field errors. */
@@ -99,23 +95,34 @@ function initFieldValidation(form) {
          validateField(field);
       });
       field.addEventListener("input", () => {
-         updateSubmitButton(form);
          if (field.classList.contains("touched")) validateField(field);
       });
-      field.addEventListener("change", () => updateSubmitButton(form));
    });
+
+   const privacyCheck = form.querySelector("#privacy-check");
+   if (privacyCheck) {
+      privacyCheck.addEventListener("change", () => {
+         privacyCheck.classList.add("touched");
+         validatePrivacy(form);
+      });
+   }
 }
 
-/** Initializes the contact form with inline validation and submit gating. */
+/** Marks all fields as touched to trigger validation styling. */
+function markAllTouched(form) {
+   form.querySelectorAll("input, textarea").forEach((f) => f.classList.add("touched"));
+}
+
+/** Initializes the contact form with inline validation and submit handling. */
 function initContactForm() {
    const form = document.querySelector(".contact-form");
    if (!form) return;
-   updateSubmitButton(form);
    initFieldValidation(form);
    form.addEventListener("submit", (e) => {
       e.preventDefault();
       markAllTouched(form);
       form.querySelectorAll("input, textarea").forEach(validateField);
+      validatePrivacy(form);
       if (!form.checkValidity()) return;
       const btn = form.querySelector('[type="submit"]');
       if (btn) btn.disabled = true;

@@ -63,12 +63,14 @@ function initArrowButtons() {
    });
 }
 
-/** Wires each nav link to smooth-scroll to its target section. */
+/** Wires all internal hash anchor links to smooth-scroll via scrollToSection. */
 function initNavLinks() {
-   document.querySelectorAll(".nav-links a").forEach((link) => {
+   document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      const target = link.getAttribute("href").replace("#", "");
+      if (!target) return;
       link.addEventListener("click", (e) => {
          e.preventDefault();
-         scrollToSection(link.getAttribute("href").replace("#", ""));
+         scrollToSection(target);
       });
    });
 }

@@ -34,7 +34,7 @@
 
 .reference-card blockquote {
    flex: 1;
-   font-size: 15px;
+   font-size: 16px;
    line-height: 1.6;
    color: var(--color-white);
    font-style: italic;

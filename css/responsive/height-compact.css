@@ -48,6 +48,14 @@
       top: 261px;
    }
 
+   .about-content h3 {
+      font-size: 3vw;
+   }
+
+   #why-me {
+      padding-top: 112px;
+   }
+
    /* Hero */
    .hero-name {
       font-size: 56px;
@@ -72,6 +80,53 @@
    .skill-item {
       font-size: 13px;
    }
+   /* Projekt */
+   .project-card {
+      height: 473px;
+      padding: 16px;
+   }
+
+   .project-number {
+      font-size: 72px;
+   }
+
+   .project-card h3 {
+      font-size: 40px;
+   }
+
+   .project-about p,
+   .project-details p,
+   .project-card-footer p {
+      font-size: 15px;
+   }
+
+   .detail-label {
+      font-size: 18px;
+   }
+
+   .project-card-media {
+      width: 240px;
+   }
+
+   .project-card-media img {
+      height: 88%;
+   }
+
+   .project-card--ongoing {
+      height: 245px;
+   }
+
+   .project-card--ongoing .project-number {
+      font-size: 38px;
+   }
+
+   .project-card--ongoing h3 {
+      font-size: 24px;
+   }
+
+   .project-card--ongoing p {
+      font-size: 14px;
+   }
 
    /* Contact */
    .contact-info {
@@ -80,16 +135,27 @@
 
    .contact-tagline,
    .contact-description {
-      font-size: 15px;
+      font-size: 16px;
    }
 
    .contact-form textarea {
-      height: 160px;
+      height: 80px;
+   }
+
+   .contact-wrapper {
+      padding-top: 24px;
    }
 
    /* Legal / Privacy */
    .legal-wrapper {
-      padding-top: 36px;
+      padding-top: 24px;
+   }
+}
+
+/* ---- Nav link font size reduction below 720px height ---- */
+@media (min-width: 769px) and (max-height: 720px) {
+   .nav-links a {
+      font-size: 24px;
    }
 }
 
@@ -109,53 +175,10 @@
 
 /* ---- Mobile landscape (≤768px wide, ≤865px tall) ---- */
 @media (max-width: 768px) and (max-height: 865px) {
-   /* Hero image: prevent it from eating the full screen in landscape */
-   .hero-image img {
-      max-height: 260px;
-      object-position: top center;
-   }
-
-   .hero-text {
-      padding: 12px 20px 20px;
-   }
-
-   .hero-name {
-      font-size: 32px;
-   }
-
-   .hero-title {
-      font-size: 20px;
-   }
-
-   .hero-location {
-      font-size: 15px;
-   }
-
    /* Mobile menu: shorter so it doesn't overflow on landscape */
    .mobile-menu-overlay {
       height: 260px;
       overflow-y: auto;
-   }
-
-   /* Skills tighter */
-   .skills-grid {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-   }
-
-   .skill-icon,
-   .skill-item img {
-      width: 40px;
-      height: 40px;
-   }
-
-   .skill-item {
-      font-size: 13px;
-   }
-
-   /* Contact form textarea shorter */
-   .contact-form textarea {
-      height: 160px;
    }
 
    /* Legal / Privacy: less top offset needed (nav is 60px) */

@@ -40,6 +40,7 @@ const translations = {
       "contact.error.email.required": "Email is required",
       "contact.error.email.invalid": "Invalid email address",
       "contact.error.message.required": "Message is required",
+      "contact.error.privacy.required": "Please accept the privacy policy.",
       "contact.error.server": "Sending failed. Please try again later.",
       "contact.error.network": "Network error. Please try again later.",
 
@@ -118,7 +119,7 @@ const translations = {
 
       "about.description": "Ich bin ein Frontend-Entwickler mit dem Fokus darauf, Designs in sauberen, präzisen und leistungsstarken Code umzusetzen. Ich arbeite detailorientiert und strukturiert, mit einem starken Anspruch an zuverlässige Ergebnisse. Was mich auszeichnet: Ich suche aktiv nach Lösungen – auch über meinen aktuellen Tech-Stack hinaus. Ich eigne mir neue Technologien schnell an und erarbeite mir genau das Wissen, das ich brauche, um ein Problem effektiv zu lösen. Mein Ziel ist es, kontinuierlich zum Fullstack-Entwickler zu wachsen und ein ganzheitliches Verständnis von Anwendungen aufzubauen.",
       "about.i-am": "Ich bin",
-      "about.fact.location": "wohnhaft in Lahr Schwarzwald",
+      "about.fact.location": "in Lahr im Schwarzwald ansässig",
       "about.fact.remote": "offen für Remote-Arbeit",
       "about.cta": "Kontakt aufnehmen",
 
@@ -143,6 +144,7 @@ const translations = {
       "contact.error.email.required": "E-Mail ist erforderlich",
       "contact.error.email.invalid": "Ungültige E-Mail-Adresse",
       "contact.error.message.required": "Nachricht ist erforderlich",
+      "contact.error.privacy.required": "Bitte akzeptiere die Datenschutzerklärung.",
       "contact.error.server": "Versand fehlgeschlagen. Bitte versuche es später erneut.",
       "contact.error.network": "Netzwerkfehler. Bitte versuche es später erneut.",
 
