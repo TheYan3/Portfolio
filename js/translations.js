@@ -24,6 +24,10 @@ const translations = {
       "references.headline": "Need a teamplayer?",
       "references.subtitle": "Here what my colleagues said about me",
 
+      "reference.1.quote": "\"Working with Yannic on Join was great. He brings a lot of technical expertise and always thinks practically and solution-oriented. His reliable and straightforward way of working noticeably enriched the team. I can only warmly recommend Yannic for any project.\"",
+      "reference.2.quote": "\"Yannic is a true team player who works in a structured and focused way even under pressure. In our shared game project, he quickly understood complex requirements and implemented them cleanly. His code is clear, well thought-out and easy to extend – exactly what you want in a team.\"",
+      "reference.3.quote": "\"Working with Yannic on the DA Bubble project was extremely productive. He took responsibility, proactively addressed issues, and always contributed constructive solutions. Yannic is someone you can rely on – professionally and personally.\"",
+
       "contact.tagline": "Let us work together.",
       "contact.description": "Looking for a frontend developer who delivers clean, precise code and brings a structured mindset to every project? I'm open to new opportunities — whether that's a permanent role or freelance collaboration. Let's build something great together.",
       "contact.placeholder.name": "Your name",
@@ -115,6 +119,10 @@ const translations = {
 
       "references.headline": "Du suchst einen Teamplayer?",
       "references.subtitle": "Das sagen meine Kollegen über mich",
+
+      "reference.1.quote": "\"Die Zusammenarbeit mit Yannic bei Join war großartig. Er bringt nicht nur viel fachliches Know-how mit, sondern denkt stets praktisch und lösungsorientiert. Seine Art, zuverlässig und unkompliziert zu arbeiten, hat das Team spürbar bereichert. Ich kann Yannic jedem Projekt nur wärmstens empfehlen.\"",
+      "reference.2.quote": "\"Yannic ist ein echter Teamplayer, der unter Druck strukturiert und fokussiert arbeitet. Bei unserem gemeinsamen Spielprojekt hat er komplexe Anforderungen schnell verstanden und sauber umgesetzt. Sein Code ist klar, durchdacht und leicht zu erweitern – genau das, was man sich in einem Team wünscht.\"",
+      "reference.3.quote": "\"Die Zusammenarbeit mit Yannic im DA Bubble Projekt war äußerst produktiv. Er hat Eigenverantwortung übernommen, Probleme proaktiv angesprochen und immer konstruktive Lösungen eingebracht. Yannic ist jemand, auf den man sich verlassen kann – fachlich wie menschlich.\"",
 
       "contact.tagline": "Lass uns zusammenarbeiten.",
       "contact.description": "Du suchst einen Frontend-Entwickler, der sauberen, präzisen Code liefert und mit strukturiertem Mindset an jedes Projekt herangeht? Ich bin offen für neue Möglichkeiten — ob Festanstellung oder freie Mitarbeit. Lass uns gemeinsam etwas Großartiges aufbauen.",

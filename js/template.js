@@ -102,7 +102,7 @@ function buildSocialLinkHTML(link) {
 /** Returns a reference card with quote, divider and author. */
 function buildReferenceCardHTML(ref) {
    return `<div class="reference-card">
-      <blockquote>"${ref.quote}"</blockquote>
+      <blockquote data-i18n="${ref.quoteKey}"></blockquote>
       <div class="reference-divider"></div>
       <div class="reference-author">
          <p class="author-name">${ref.authorName}</p>

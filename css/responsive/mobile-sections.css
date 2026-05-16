@@ -126,7 +126,6 @@
       padding-right: 0;
    }
 
-
    .skills-grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
@@ -230,9 +229,6 @@
       width: 100%;
    }
 
-   /* Figma mobile order: tagline+info first, form second, footer last.
-      display:contents dissolves the .contact-info box so its children
-      become direct flex-children of .contact-body and can be ordered. */
    #contact .contact-info {
       display: contents;
    }
@@ -282,6 +278,7 @@
    .contact-tagline,
    .contact-description {
       text-align: left;
+      align-self: flex-start;
    }
 
    .contact-sidebar {

@@ -23,17 +23,17 @@ const socialLinks = [
 
 const references = [
    {
-      quote: "Die Zusammenarbeit mit Yannic bei Join war großartig. Er bringt nicht nur viel fachliches Know-how mit, sondern denkt stets praktisch und lösungsorientiert. Seine Art, zuverlässig und unkompliziert zu arbeiten, hat das Team spürbar bereichert. Ich kann Yannic jedem Projekt nur wärmstens empfehlen.",
+      quoteKey: "reference.1.quote",
       authorName: "Matthias Arnoldy",
       authorRole: "Project Join",
    },
    {
-      quote: "Yannic ist ein echter Teamplayer, der auch unter Druck strukturiert und fokussiert arbeitet. Bei unserem gemeinsamen Spielprojekt hat er komplexe Anforderungen schnell verstanden und sauber umgesetzt. Sein Code ist klar, gut durchdacht und leicht zu erweitern – genau das, was man sich in einem Team wünscht.",
+      quoteKey: "reference.2.quote",
       authorName: "Jonas Weber",
       authorRole: "Project Join",
    },
    {
-      quote: "Die Zusammenarbeit mit Yannic im DA Bubble Projekt war äußerst produktiv. Er hat Eigenverantwortung übernommen, Probleme proaktiv angesprochen und immer konstruktive Lösungen eingebracht. Yannic ist jemand, auf den man sich verlassen kann – fachlich wie menschlich.",
+      quoteKey: "reference.3.quote",
       authorName: "Laura Hoffmann",
       authorRole: "Project DA Bubble",
    },
@@ -84,17 +84,17 @@ const projects = [
       footerLabelKey: "project.label.learned",
       footerTextKey: "project.1.footer",
    },
-   {
-      number: 3,
-      title: "Project DA Bubble",
-      aboutKey: "project.3.about",
-      technologies: "JavaScript, HTML, CSS",
-      imgSrc: "assets/img/da-bubble.png",
-      githubUrl: "#",
-      liveUrl: "#",
-      footerLabelKey: "project.label.group",
-      footerTextKey: "project.3.footer",
-   },
+   //{
+   //number: 3,
+   //title: "Project DA Bubble",
+   //aboutKey: "project.3.about",
+   //technologies: "JavaScript, HTML, CSS",
+   //imgSrc: "assets/img/da-bubble.png",
+   //githubUrl: "#",
+   //liveUrl: "#",
+   //footerLabelKey: "project.label.group",
+   // footerTextKey: "project.3.footer",
+   //},
    {
       number: 4,
       titleKey: "project.4.title",

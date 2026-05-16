@@ -35,11 +35,13 @@ function setLang(lang) {
    applyPlaceholders(lang);
    applyHtmlNodes(lang);
    updateToggleButtons(lang);
+   localStorage.setItem("lang", lang);
 }
 
 /** Initializes language toggle */
 function initLangToggle() {
-   setLang("en");
+   const saved = localStorage.getItem("lang") || "en";
+   setLang(saved);
    document.querySelectorAll(".lang").forEach((btn) => {
       btn.addEventListener("click", () => setLang(btn.dataset.lang));
    });

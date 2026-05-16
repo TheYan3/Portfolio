@@ -19,7 +19,7 @@
    }
 
    .nav-links a {
-      font-size: 72px;
+      font-size: 64px;
    }
 
    .nav-links a.active {
@@ -298,6 +298,26 @@
    /* Legal */
    .legal-wrapper {
       padding-top: 140px;
+      padding-right: 140px;
+      gap: 56px;
+   }
+
+   .legal-columns {
+      gap: 68px;
+   }
+
+   .legal-col {
+      gap: 34px;
+   }
+
+   .legal-block h2 {
+      font-size: 32px;
+   }
+
+   .legal-block p,
+   .legal-block ul li,
+   .legal-meta {
+      font-size: 32px;
    }
 
    .section-headline {

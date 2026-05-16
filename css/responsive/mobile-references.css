@@ -111,10 +111,9 @@
    }
 
    .reference-author {
-      flex-direction: row;
-      align-items: flex-start;
+      flex-direction: column;
       justify-content: flex-start;
-      gap: 16px;
+      gap: 4px;
       min-width: auto;
       width: 100%;
    }
