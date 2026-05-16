@@ -71,6 +71,18 @@ function validatePrivacy(form) {
    err.textContent = checkbox?.checked ? "" : getMsg("contact.error.privacy.required");
 }
 
+/** Returns true when all text/email/textarea fields have a value. */
+function areFieldsFilled(form) {
+   return [...form.querySelectorAll("input[type='text'], input[type='email'], textarea")]
+      .every((f) => f.value.trim() !== "");
+}
+
+/** Enables or disables the submit button based on field fill state only. */
+function updateSubmitButton(form) {
+   const btn = form.querySelector('[type="submit"]');
+   if (btn) btn.disabled = !areFieldsFilled(form);
+}
+
 /** POSTs form data and shows inline success or error message. */
 function submitContactForm(form, btn) {
    const fd = new FormData(form);
@@ -84,7 +96,7 @@ function submitContactForm(form, btn) {
          else appendFormMsg(form, "contact.error.server", "form-error-msg");
       })
       .catch(() => appendFormMsg(form, "contact.error.network", "form-error-msg"))
-      .finally(() => { if (btn) btn.disabled = false; });
+      .finally(() => updateSubmitButton(form));
 }
 
 /** Adds blur and input listeners to show per-field errors. */
@@ -95,6 +107,7 @@ function initFieldValidation(form) {
          validateField(field);
       });
       field.addEventListener("input", () => {
+         updateSubmitButton(form);
          if (field.classList.contains("touched")) validateField(field);
       });
    });
@@ -117,13 +130,15 @@ function markAllTouched(form) {
 function initContactForm() {
    const form = document.querySelector(".contact-form");
    if (!form) return;
+   updateSubmitButton(form);
    initFieldValidation(form);
    form.addEventListener("submit", (e) => {
       e.preventDefault();
       markAllTouched(form);
       form.querySelectorAll("input, textarea").forEach(validateField);
       validatePrivacy(form);
-      if (!form.checkValidity()) return;
+      const checkbox = form.querySelector("#privacy-check");
+      if (!checkbox?.checked) { validatePrivacy(form); return; }
       const btn = form.querySelector('[type="submit"]');
       if (btn) btn.disabled = true;
       submitContactForm(form, btn);
