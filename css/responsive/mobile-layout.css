@@ -3,7 +3,12 @@
    Schaltet das horizontale Desktop-Scroll-Layout auf
    vertikales normales Seitenscrolling um.
    ========================================================= */
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 547px) {
+   html {
+      overflow-y: auto;
+      height: auto;
+   }
+
    body {
       display: block;
       overflow-y: auto;

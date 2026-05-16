@@ -1,6 +1,6 @@
 /** Returns true when viewport is in mobile breakpoint. */
 function isMobile() {
-   return window.innerWidth <= 768;
+   return window.innerWidth <= 768 || window.innerHeight <= 547;
 }
 
 /** Scrolls the main container to the target section by id. */
@@ -51,7 +51,7 @@ function initWheelScroll() {
       e.preventDefault();
       container.scrollLeft += e.deltaY || e.deltaX;
    };
-   const mq = window.matchMedia("(max-width: 768px)");
+   const mq = window.matchMedia("(max-width: 768px), (max-height: 547px)");
    syncWheelListener(container, handler, mq.matches);
    mq.addEventListener("change", (e) => syncWheelListener(container, handler, e.matches));
 }

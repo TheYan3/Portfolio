@@ -3,7 +3,7 @@
    Hero, Why-Me, Skills, Contact – sektionsspezifische
    Anpassungen für das mobile Layout.
    ========================================================= */
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 547px) {
    /* ---- Hero ---- */
    #hero {
       padding: 60px 0 0;
@@ -403,7 +403,7 @@
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 547px) {
    .desktop-copy {
       display: none;
    }

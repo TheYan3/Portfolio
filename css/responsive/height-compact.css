@@ -39,13 +39,13 @@
       top: calc(100% - 36px);
    }
    .arrow-btn--skills {
-      top: calc(50% - 153px);
+      top: calc(50% - 105px);
    }
    .arrow-btn--work {
       top: calc(100% - 36px);
    }
    .arrow-btn--references {
-      top: 261px;
+      top: 184px;
    }
 
    .about-content h3 {
@@ -63,6 +63,7 @@
 
    .hero-image {
       width: 600px;
+      margin: 0 auto;
    }
 
    /* Skills */
@@ -149,6 +150,28 @@
    /* Legal / Privacy */
    .legal-wrapper {
       padding-top: 24px;
+   }
+}
+
+/* ---- Project card layout fix for landscape (wide + short) ---- */
+@media (min-width: 769px) and (max-height: 547px) {
+   .project-card {
+      height: 235px;
+   }
+
+   .project-card.is-expanded {
+      height: auto;
+   }
+
+   .project-card-upper {
+      flex-direction: row;
+   }
+}
+
+/* ---- Nav link font size reduction at wide screens with short height ---- */
+@media (min-width: 2300px) and (max-height: 1360px) {
+   .nav-links a {
+      font-size: 35px;
    }
 }
 

@@ -8,7 +8,7 @@
    Projektkarten auf volle Breite, eingeklappt mit
    Expand/Collapse-Toggle.
    ========================================================= */
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 547px) {
    #my-work {
       width: 100%;
       flex: none;

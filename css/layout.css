@@ -39,8 +39,16 @@
 }
 
 @keyframes arrow-pulse {
-   0%, 70%, 100% { scale: 1; filter: none; }
-   85% { scale: 1.18; filter: drop-shadow(0 0 10px var(--color-main)); }
+   0%,
+   70%,
+   100% {
+      scale: 1;
+      filter: none;
+   }
+   85% {
+      scale: 1.18;
+      filter: drop-shadow(0 0 10px var(--color-main));
+   }
 }
 
 .arrow-btn {
@@ -85,17 +93,17 @@
 }
 
 .arrow-btn--hero {
-   top: 328px;
+   top: 410px;
 }
 .arrow-btn--why-me {
-   top: calc(100% - 148px);
+   top: calc(100% - 124px);
 }
 .arrow-btn--skills {
    top: calc(50% - 90px);
 }
 .arrow-btn--work {
-   top: calc(100% - 148px);
+   top: calc(100% - 118px);
 }
 .arrow-btn--references {
-   top: 404px;
+   top: 357px;
 }
