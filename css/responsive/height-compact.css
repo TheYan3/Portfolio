@@ -84,7 +84,7 @@
    }
 
    .contact-form textarea {
-      height: 100px;
+      height: 160px;
    }
 
    /* Legal / Privacy */
@@ -155,7 +155,7 @@
 
    /* Contact form textarea shorter */
    .contact-form textarea {
-      height: 80px;
+      height: 160px;
    }
 
    /* Legal / Privacy: less top offset needed (nav is 60px) */

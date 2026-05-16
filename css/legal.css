@@ -71,6 +71,7 @@
    color: var(--color-main);
 }
 
-#legal-p1 .section-label {
+#legal-p1 .section-label,
+#privacy-p1 .section-label {
    align-self: flex-start;
 }

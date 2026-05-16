@@ -8,7 +8,8 @@ function scrollToSection(targetId) {
    const target = document.getElementById(targetId);
    if (!target) return;
    if (isMobile()) {
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      const top = target.getBoundingClientRect().top + window.scrollY - 60;
+      window.scrollTo({ top, behavior: "smooth" });
    } else {
       target.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
    }
